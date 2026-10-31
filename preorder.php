@@ -29,7 +29,7 @@ class Preorder extends Module
     {
         $this->name = 'preorder';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.2';
+        $this->version = '1.0.3';
         $this->author = 'iamshoaibktk@gmail.com';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = ['min' => '9.0.0', 'max' => _PS_VERSION_];
@@ -79,7 +79,7 @@ class Preorder extends Module
 
         return parent::install() && $this->registerHook([
             'displayProductAdditionalInfo', 'displayShoppingCart', 'displayAdminOrderMain', 'actionFrontControllerSetMedia',
-            'actionCartControllerInitBefore', 'actionCartSave', 'actionValidateOrder', 'actionUpdateQuantity',
+            'actionCartControllerInitBefore', 'actionCartSave', 'actionValidateOrder', 'actionUpdateQuantity', 'actionPresentCart',
         ]);
     }
 
@@ -288,6 +288,38 @@ class Preorder extends Module
         if ($cart instanceof Cart && $this->context->controller instanceof FrontController) {
             $this->syncCart($cart);
         }
+    }
+
+    /**
+     * PrestaShop labels cart lines from the product's general discounts and ignores the price
+     * scoped to the cart, so a deposit or balance line would show a discount it does not have.
+     */
+    public function hookActionPresentCart(array $params): void
+    {
+        $idCart = $this->context->cart ? (int) $this->context->cart->id : 0;
+        if (!$idCart || !isset($params['presentedCart'])) {
+            return;
+        }
+        $db = Db::getInstance();
+        $p = _DB_PREFIX_;
+        $lines = $db->executeS("SELECT id_product, id_product_attribute FROM {$p}preorder_cart WHERE id_cart = $idCart AND id_specific_price > 0
+            UNION SELECT id_product, id_product_attribute FROM {$p}preorder_order WHERE id_balance_cart = $idCart") ?: [];
+        if (!$lines) {
+            return;
+        }
+        $marked = [];
+        foreach ($lines as $l) {
+            $marked[(int) $l['id_product'] . '-' . (int) $l['id_product_attribute']] = true;
+        }
+        $products = $params['presentedCart']['products'];
+        foreach ($products as $product) {
+            if (isset($marked[(int) $product['id_product'] . '-' . (int) $product['id_product_attribute']])) {
+                $product->offsetSet('has_discount', false, true);
+                $product->offsetSet('discount_type', null, true);
+                $product->offsetSet('regular_price', $product['price'], true);
+            }
+        }
+        $params['presentedCart']->offsetSet('products', $products, true);
     }
 
     /** Stops what checkout could not honour, before it reaches the cart. */
