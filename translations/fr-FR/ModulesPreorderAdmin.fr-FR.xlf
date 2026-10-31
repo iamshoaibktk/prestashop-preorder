@@ -18,22 +18,6 @@
         <source>Settings updated.</source>
         <target>Paramètres mis à jour.</target>
       </trans-unit>
-      <trans-unit id="f4f70727dc34561dfde1a3c529b6205c">
-        <source>Settings</source>
-        <target>Paramètres</target>
-      </trans-unit>
-      <trans-unit id="2faec1f9f8cc7f8f40d521c4dd574f49">
-        <source>Enable</source>
-        <target>Activer</target>
-      </trans-unit>
-      <trans-unit id="93cba07454f06a4a960172bbd6e2a435">
-        <source>Yes</source>
-        <target>Oui</target>
-      </trans-unit>
-      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b">
-        <source>No</source>
-        <target>Non</target>
-      </trans-unit>
       <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
         <source>Save</source>
         <target>Enregistrer</target>
@@ -118,10 +102,6 @@
         <source>Balance due (tax excl.)</source>
         <target>Solde dû (HT)</target>
       </trans-unit>
-      <trans-unit id="9190148a024aaf825a24b1f00ba6ec28">
-        <source>Add or update a pre-order product</source>
-        <target>Ajouter ou modifier un produit en précommande</target>
-      </trans-unit>
       <trans-unit id="2cd6199ee67f0eadee9d5dd14fc30f75">
         <source>User guide (PDF)</source>
         <target>Guide d'utilisation (PDF)</target>
@@ -146,53 +126,13 @@
         <source>Deposit</source>
         <target>Acompte</target>
       </trans-unit>
-      <trans-unit id="6a323b7a2b896ae50e86e5adb704ad76">
-        <source>Customer chooses the amount, above a minimum</source>
-        <target>Le client choisit le montant, au-dessus d'un minimum</target>
-      </trans-unit>
-      <trans-unit id="f5df1a79064ef4606b7b6758443e329b">
-        <source>Deposit or minimum</source>
-        <target>Acompte ou minimum</target>
-      </trans-unit>
       <trans-unit id="066111780930fe215402da8dca11441d">
         <source>Fixed amount, tax included</source>
         <target>Montant fixe, TTC</target>
       </trans-unit>
-      <trans-unit id="0c614e951a7f8d396870c7db62bbd8a6">
-        <source>Available from (countdown, optional)</source>
-        <target>Disponible à partir du (compte à rebours, facultatif)</target>
-      </trans-unit>
-      <trans-unit id="6d72c85bc54f8246cf3cccafcd8ce228">
-        <source>Maximum units to pre-order (0 = no limit)</source>
-        <target>Unités maximum en précommande (0 = sans limite)</target>
-      </trans-unit>
-      <trans-unit id="a0d93ca1342ce45546810f0cfc14f0bd">
-        <source>Only these customer groups (none selected = everyone)</source>
-        <target>Uniquement ces groupes de clients (aucun = tout le monde)</target>
-      </trans-unit>
-      <trans-unit id="d8ca5797ba299fcf747f6963393cd6cf">
-        <source>Only these countries (none selected = everywhere)</source>
-        <target>Uniquement ces pays (aucun = partout)</target>
-      </trans-unit>
-      <trans-unit id="b855b2f16becc0f07b6e6f38525c8532">
-        <source>Pre-order products</source>
-        <target>Produits en précommande</target>
-      </trans-unit>
-      <trans-unit id="27ce7f8b5623b2e2df568d64cf051607">
-        <source>Stock</source>
-        <target>Stock</target>
-      </trans-unit>
       <trans-unit id="942d4e37dd5607ab68e54755540d4a47">
         <source>Reserved</source>
         <target>Réservé</target>
-      </trans-unit>
-      <trans-unit id="1432596d084873bee8df589b0b01448c">
-        <source>Available from</source>
-        <target>Disponible à partir du</target>
-      </trans-unit>
-      <trans-unit id="6805e27cb322116de055f03fa50989da">
-        <source>Notify customers now</source>
-        <target>Prévenir les clients</target>
       </trans-unit>
       <trans-unit id="1063e38cb53d94d386f21227fcd84717">
         <source>Remove</source>
@@ -202,10 +142,6 @@
         <source>No pre-order products yet.</source>
         <target>Aucun produit en précommande.</target>
       </trans-unit>
-      <trans-unit id="b0781832285753be26dc8d1200475fdf">
-        <source>Product demand</source>
-        <target>Demande par produit</target>
-      </trans-unit>
       <trans-unit id="e6d0e1c8fc6a4fcf47869df87e04cd88">
         <source>Customers</source>
         <target>Clients</target>
@@ -213,14 +149,6 @@
       <trans-unit id="e5771a362d88a71a657bfcd21ca54b3f">
         <source>Units</source>
         <target>Unités</target>
-      </trans-unit>
-      <trans-unit id="c39b9887d30ecf479cf26ff31dfc22f7">
-        <source>Value (tax excl.)</source>
-        <target>Valeur (HT)</target>
-      </trans-unit>
-      <trans-unit id="5e05906d9f418546b4ec254603b86428">
-        <source>Collected (tax excl.)</source>
-        <target>Encaissé (HT)</target>
       </trans-unit>
       <trans-unit id="a704d920ee4b6f85bc976fb424f9d673">
         <source>Pre-orders</source>
@@ -233,6 +161,222 @@
       <trans-unit id="ec53a8c4f07baed5d8825072c89799be">
         <source>Status</source>
         <target>Statut</target>
+      </trans-unit>
+      <trans-unit id="615bf6db4dee158ccbbc1ed5aef1ced9">
+        <source>Pre-Order</source>
+        <target>Précommande</target>
+      </trans-unit>
+      <trans-unit id="9d1ed0f46bea7f282e7d4dda4cf7e835">
+        <source>Keep selling products that are out of stock or not released yet.</source>
+        <target>Continuez à vendre les produits en rupture ou pas encore sortis.</target>
+      </trans-unit>
+      <trans-unit id="3b878279a04dc47d60932cb294d96259">
+        <source>Overview</source>
+        <target>Vue d'ensemble</target>
+      </trans-unit>
+      <trans-unit id="6f3d10ad9f7b21d643e5486b77fd866e">
+        <source>Units reserved</source>
+        <target>Unités réservées</target>
+      </trans-unit>
+      <trans-unit id="4160dfb64fcc1a9b7e599b567b0ea1d4">
+        <source>Order value</source>
+        <target>Valeur des commandes</target>
+      </trans-unit>
+      <trans-unit id="81e91be8db96be69e372f0c715ec7444">
+        <source>Collected</source>
+        <target>Encaissé</target>
+      </trans-unit>
+      <trans-unit id="23c7835ce274132f7f77f6092512fe22">
+        <source>Balance to collect</source>
+        <target>Solde à encaisser</target>
+      </trans-unit>
+      <trans-unit id="6d98f9a778610b7db37bf881457857e4">
+        <source>Amounts exclude tax and shipping.</source>
+        <target>Montants hors taxes et hors livraison.</target>
+      </trans-unit>
+      <trans-unit id="068f80c7519d0528fb08e82137a72131">
+        <source>Products</source>
+        <target>Produits</target>
+      </trans-unit>
+      <trans-unit id="c4d73b22e1efa7b4cf555a4268c99720">
+        <source>Demand</source>
+        <target>Demande</target>
+      </trans-unit>
+      <trans-unit id="11a738dd0c48f1401a059bca54bc119c">
+        <source>Add product</source>
+        <target>Ajouter un produit</target>
+      </trans-unit>
+      <trans-unit id="9b2d288c7b0c5d6240966cf13bfc6ec8">
+        <source>Release date</source>
+        <target>Date de sortie</target>
+      </trans-unit>
+      <trans-unit id="06df33001c1d7187fdd81ea1f5b277aa">
+        <source>Actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="f88006f89ef08f2443948e5f64bb43a0">
+        <source>On pre-order</source>
+        <target>En précommande</target>
+      </trans-unit>
+      <trans-unit id="9a4e79f5a2362e9d066c499b19cac3f4">
+        <source>Some combinations</source>
+        <target>Certaines déclinaisons</target>
+      </trans-unit>
+      <trans-unit id="1a9f3eca1a1255e04e6bf048bc58c96a">
+        <source>In stock, sold normally</source>
+        <target>En stock, vente normale</target>
+      </trans-unit>
+      <trans-unit id="7dce122004969d56ae2e0245cb754d35">
+        <source>Edit</source>
+        <target>Modifier</target>
+      </trans-unit>
+      <trans-unit id="aaf9ed605d0193362321ba0def15c9b7">
+        <source>Notify</source>
+        <target>Prévenir</target>
+      </trans-unit>
+      <trans-unit id="f2751933f5f7c10f32d21002f42a5ca1">
+        <source>No customers are waiting</source>
+        <target>Aucun client en attente</target>
+      </trans-unit>
+      <trans-unit id="1b815110b15e389b8caf0fcda9565ade">
+        <source>Add a product to start taking orders on its out-of-stock page.</source>
+        <target>Ajoutez un produit pour prendre des commandes sur sa page en rupture.</target>
+      </trans-unit>
+      <trans-unit id="71447553c5f1806fa447685086d3d65c">
+        <source>Balance due</source>
+        <target>Solde dû</target>
+      </trans-unit>
+      <trans-unit id="4e5fd8070a0c5f24f8da49ed24d5dfbd">
+        <source>No pre-orders yet.</source>
+        <target>Aucune précommande pour l'instant.</target>
+      </trans-unit>
+      <trans-unit id="0c89c11917542260b9948d4fd3d30e29">
+        <source>They appear here as soon as a customer orders a pre-order product.</source>
+        <target>Elles apparaissent ici dès qu'un client commande un produit en précommande.</target>
+      </trans-unit>
+      <trans-unit id="cc193461a00920bb15c4943611a8fa18">
+        <source>No demand data yet.</source>
+        <target>Pas encore de données de demande.</target>
+      </trans-unit>
+      <trans-unit id="08a968289c93a041dfad454c1f825aab">
+        <source>See which products customers want most once pre-orders come in.</source>
+        <target>Voyez quels produits sont les plus demandés dès l'arrivée des précommandes.</target>
+      </trans-unit>
+      <trans-unit id="fd1e444e2d65f989ac447b443364d780">
+        <source>New pre-order product</source>
+        <target>Nouveau produit en précommande</target>
+      </trans-unit>
+      <trans-unit id="4be37fa5f3738e3ffca104209ede3385">
+        <source>Edit pre-order product</source>
+        <target>Modifier le produit en précommande</target>
+      </trans-unit>
+      <trans-unit id="fc46c6d608767841551edec18501d714">
+        <source>Deposit amount</source>
+        <target>Montant de l'acompte</target>
+      </trans-unit>
+      <trans-unit id="9f6e99bdd4184b83dc478d0ab1b4cbf7">
+        <source>Minimum amount</source>
+        <target>Montant minimum</target>
+      </trans-unit>
+      <trans-unit id="b9af8635591dc44009ccd8e5389722ec">
+        <source>No products found</source>
+        <target>Aucun produit trouvé</target>
+      </trans-unit>
+      <trans-unit id="89980cfe79818aba3f273b2e3dd849fb">
+        <source>Pick a product from the list.</source>
+        <target>Choisissez un produit dans la liste.</target>
+      </trans-unit>
+      <trans-unit id="c40614ee8b6c69e4a99b669f7530d368">
+        <source>Take %product% off pre-order? Existing pre-orders are kept.</source>
+        <target>Retirer %product% de la précommande ? Les précommandes existantes sont conservées.</target>
+      </trans-unit>
+      <trans-unit id="f6ab53d59a5eabbcb67f9438bcefa270">
+        <source>Email the %count% waiting customers of %product% now?</source>
+        <target>Envoyer un e-mail maintenant aux %count% clients en attente de %product% ?</target>
+      </trans-unit>
+      <trans-unit id="f4ec5f57bd4d31b803312d873be40da9">
+        <source>Change</source>
+        <target>Changer</target>
+      </trans-unit>
+      <trans-unit id="3d61c772d4d42f75c2510fc7717aba4a">
+        <source>What customers pay</source>
+        <target>Ce que paient les clients</target>
+      </trans-unit>
+      <trans-unit id="99d0a3022e983008645adeb27a421e8f">
+        <source>The whole price at checkout. Best for low-priced products.</source>
+        <target>Le prix complet à la commande. Idéal pour les petits prix.</target>
+      </trans-unit>
+      <trans-unit id="ec17b2cbec1c5419b6d4632f71b5a92f">
+        <source>A part now, the rest when the product arrives.</source>
+        <target>Une partie maintenant, le reste à l'arrivée du produit.</target>
+      </trans-unit>
+      <trans-unit id="27b616677556b4e60dcea5d36c8d7677">
+        <source>Customer chooses</source>
+        <target>Au choix du client</target>
+      </trans-unit>
+      <trans-unit id="3ac77d76f051b085bb8cb3943cdba967">
+        <source>Any amount above your minimum, the rest later.</source>
+        <target>Tout montant au-dessus de votre minimum, le reste plus tard.</target>
+      </trans-unit>
+      <trans-unit id="faeaec9eda6bc4c8cb6e1a9156a858be">
+        <source>Availability</source>
+        <target>Disponibilité</target>
+      </trans-unit>
+      <trans-unit id="ebb061953c0454b2c8ee7b0ac615ebcd">
+        <source>Optional</source>
+        <target>Facultatif</target>
+      </trans-unit>
+      <trans-unit id="fd76061251af5dd3512f3a12439c728c">
+        <source>Shows a countdown on the product page.</source>
+        <target>Affiche un compte à rebours sur la fiche produit.</target>
+      </trans-unit>
+      <trans-unit id="71959d98f187f5a5b68b4165d66b03d3">
+        <source>Unit limit</source>
+        <target>Limite d'unités</target>
+      </trans-unit>
+      <trans-unit id="b52e621ee024fcc7fd1fae1c1befff19">
+        <source>Stops pre-orders after this many units. 0 means no limit.</source>
+        <target>Arrête les précommandes après ce nombre d'unités. 0 = sans limite.</target>
+      </trans-unit>
+      <trans-unit id="2537b172ee8d80aab04ab191258ac145">
+        <source>Who can pre-order</source>
+        <target>Qui peut précommander</target>
+      </trans-unit>
+      <trans-unit id="f9ae5e5c44e59f94680af569879f704a">
+        <source>Everyone</source>
+        <target>Tout le monde</target>
+      </trans-unit>
+      <trans-unit id="b45855b541241445545851e9946470cf">
+        <source>Only selected</source>
+        <target>Sélection uniquement</target>
+      </trans-unit>
+      <trans-unit id="517a8a7dbf1f6e371509817de328e396">
+        <source>Customer groups</source>
+        <target>Groupes de clients</target>
+      </trans-unit>
+      <trans-unit id="790d59ef178acbc75d233bf4211763c6">
+        <source>Countries</source>
+        <target>Pays</target>
+      </trans-unit>
+      <trans-unit id="5f644607c5ae29d4fe01f21598fb3b50">
+        <source>Search countries</source>
+        <target>Chercher un pays</target>
+      </trans-unit>
+      <trans-unit id="67f988e2162d418689561b844a72ce15">
+        <source>Nothing ticked in a list means no limit on it.</source>
+        <target>Rien de coché dans une liste = pas de limite sur celle-ci.</target>
+      </trans-unit>
+      <trans-unit id="d6059222d9deb4c2d0f60e277258b388">
+        <source>Preview on the product page</source>
+        <target>Aperçu sur la fiche produit</target>
+      </trans-unit>
+      <trans-unit id="dc30c2bfc6927bfd521e4c1f88b08f2c">
+        <source>Back to products</source>
+        <target>Retour aux produits</target>
+      </trans-unit>
+      <trans-unit id="ea4788705e6873b424c65e91c2846b19">
+        <source>Cancel</source>
+        <target>Annuler</target>
       </trans-unit>
     </body>
   </file>

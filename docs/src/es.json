@@ -46,7 +46,7 @@
    "title": "Cuando llega el stock",
    "content": [
     {
-     "p": "Al añadir stock, los clientes reciben un correo; quienes tienen saldo reciben un enlace de pago seguro. El pedido del saldo tiene envío gratis y no vuelve a reducir el stock. **Avisar a los clientes** envía los correos a mano."
+     "p": "Al añadir stock, los clientes reciben un correo; quienes tienen saldo reciben un enlace de pago seguro. El pedido del saldo tiene envío gratis y no vuelve a reducir el stock. **Avisar** envía los correos a mano."
     }
    ]
   },
@@ -54,7 +54,7 @@
    "title": "A tener en cuenta",
    "content": [
     {
-     "p": "Las reglas se aplican a todas las combinaciones. El depósito es el importe del pedido, así que cada pago tiene su factura. La tabla **Demanda de productos** muestra clientes, unidades y valor."
+     "p": "Las reglas se aplican a todas las combinaciones. El depósito es el importe del pedido, así que cada pago tiene su factura. La tabla **Demanda** muestra clientes, unidades y valor."
     }
    ]
   },

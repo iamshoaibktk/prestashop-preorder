@@ -46,7 +46,7 @@
    "title": "Po naskladnění",
    "content": [
     {
-     "p": "Po naskladnění dostanou zákazníci e-mail; ti s doplatkem i bezpečný platební odkaz. Objednávka doplatku má dopravu zdarma a znovu nesnižuje sklad. **Upozornit zákazníky** odešle e-maily ručně."
+     "p": "Po naskladnění dostanou zákazníci e-mail; ti s doplatkem i bezpečný platební odkaz. Objednávka doplatku má dopravu zdarma a znovu nesnižuje sklad. **Upozornit** odešle e-maily ručně."
     }
    ]
   },
@@ -54,7 +54,7 @@
    "title": "Dobré vědět",
    "content": [
     {
-     "p": "Pravidla platí pro všechny kombinace. Záloha je částka objednávky, takže každá platba má vlastní fakturu. Tabulka **Poptávka po produktech** ukazuje zákazníky, kusy a hodnotu."
+     "p": "Pravidla platí pro všechny kombinace. Záloha je částka objednávky, takže každá platba má vlastní fakturu. Tabulka **Poptávka** ukazuje zákazníky, kusy a hodnotu."
     }
    ]
   },

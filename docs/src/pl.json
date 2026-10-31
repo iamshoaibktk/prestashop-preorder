@@ -46,7 +46,7 @@
    "title": "Gdy towar dotrze",
    "content": [
     {
-     "p": "Po dodaniu towaru klienci dostają e-mail; ci z dopłatą dostają bezpieczny link. Zamówienie dopłaty ma darmową wysyłkę i nie zmniejsza stanu ponownie. **Powiadom klientów** wysyła e-maile ręcznie."
+     "p": "Po dodaniu towaru klienci dostają e-mail; ci z dopłatą dostają bezpieczny link. Zamówienie dopłaty ma darmową wysyłkę i nie zmniejsza stanu ponownie. **Powiadom** wysyła e-maile ręcznie."
     }
    ]
   },
@@ -54,7 +54,7 @@
    "title": "Warto wiedzieć",
    "content": [
     {
-     "p": "Reguły dotyczą wszystkich kombinacji. Zaliczka to kwota zamówienia, więc każda płatność ma własną fakturę. Tabela **Popyt na produkty** pokazuje klientów, sztuki i wartość."
+     "p": "Reguły dotyczą wszystkich kombinacji. Zaliczka to kwota zamówienia, więc każda płatność ma własną fakturę. Tabela **Popyt** pokazuje klientów, sztuki i wartość."
     }
    ]
   },

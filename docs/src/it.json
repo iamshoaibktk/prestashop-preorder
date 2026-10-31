@@ -46,7 +46,7 @@
    "title": "All'arrivo della merce",
    "content": [
     {
-     "p": "Quando aggiungi merce, i clienti ricevono un'email; chi ha un saldo riceve un link di pagamento sicuro. L'ordine del saldo ha spedizione gratuita e non riduce di nuovo la giacenza. **Avvisa i clienti** invia le email a mano."
+     "p": "Quando aggiungi merce, i clienti ricevono un'email; chi ha un saldo riceve un link di pagamento sicuro. L'ordine del saldo ha spedizione gratuita e non riduce di nuovo la giacenza. **Avvisa** invia le email a mano."
     }
    ]
   },
@@ -54,7 +54,7 @@
    "title": "Da sapere",
    "content": [
     {
-     "p": "Le regole valgono per tutte le combinazioni. L'acconto è l'importo dell'ordine: ogni pagamento ha la sua fattura. La tabella **Domanda dei prodotti** mostra clienti, unità e valore."
+     "p": "Le regole valgono per tutte le combinazioni. L'acconto è l'importo dell'ordine: ogni pagamento ha la sua fattura. La tabella **Domanda** mostra clienti, unità e valore."
     }
    ]
   },

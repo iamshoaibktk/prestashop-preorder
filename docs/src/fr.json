@@ -46,7 +46,7 @@
    "title": "À l'arrivée du stock",
    "content": [
     {
-     "p": "À l'ajout de stock, les clients reçoivent un e-mail ; ceux qui ont un solde reçoivent un lien de paiement sécurisé. La commande de solde a la livraison gratuite et ne réduit pas le stock une seconde fois. **Prévenir les clients** envoie les e-mails manuellement."
+     "p": "À l'ajout de stock, les clients reçoivent un e-mail ; ceux qui ont un solde reçoivent un lien de paiement sécurisé. La commande de solde a la livraison gratuite et ne réduit pas le stock une seconde fois. **Prévenir** envoie les e-mails manuellement."
     }
    ]
   },
@@ -54,7 +54,7 @@
    "title": "Bon à savoir",
    "content": [
     {
-     "p": "Les règles s'appliquent à toutes les déclinaisons. L'acompte est le montant de la commande : chaque paiement a sa facture. Le tableau **Demande par produit** indique clients, unités et valeur."
+     "p": "Les règles s'appliquent à toutes les déclinaisons. L'acompte est le montant de la commande : chaque paiement a sa facture. Le tableau **Demande** indique clients, unités et valeur."
     }
    ]
   },

@@ -46,7 +46,7 @@
    "title": "Wenn Ware eintrifft",
    "content": [
     {
-     "p": "Bei Wareneingang erhalten Kunden eine E-Mail, bei offenem Betrag mit sicherem Zahlungslink. Die Restzahlung ist versandkostenfrei und mindert den Bestand nicht erneut. **Kunden benachrichtigen** sendet die E-Mails manuell."
+     "p": "Bei Wareneingang erhalten Kunden eine E-Mail, bei offenem Betrag mit sicherem Zahlungslink. Die Restzahlung ist versandkostenfrei und mindert den Bestand nicht erneut. **Benachrichtigen** sendet die E-Mails manuell."
     }
    ]
   },
@@ -54,7 +54,7 @@
    "title": "Gut zu wissen",
    "content": [
     {
-     "p": "Regeln gelten für alle Kombinationen. Die Anzahlung ist der Bestellbetrag, jede Zahlung hat also eine eigene Rechnung. Die Tabelle **Produktnachfrage** zeigt Kunden, Stück und Wert."
+     "p": "Regeln gelten für alle Kombinationen. Die Anzahlung ist der Bestellbetrag, jede Zahlung hat also eine eigene Rechnung. Die Tabelle **Nachfrage** zeigt Kunden, Stück und Wert."
     }
    ]
   },

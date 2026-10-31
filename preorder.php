@@ -27,7 +27,7 @@ class Preorder extends Module
     {
         $this->name = 'preorder';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.0';
+        $this->version = '1.0.1';
         $this->author = 'iamshoaibktk@gmail.com';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = ['min' => '9.0.0', 'max' => _PS_VERSION_];
@@ -564,13 +564,57 @@ class Preorder extends Module
 
     private function presentOrder(array $r): array
     {
-        $tax = 1.0;
+        $order = new Order((int) $r['id_order']);
+        $iso = (string) (new Currency((int) $order->id_currency))->iso_code;
+        $due = in_array($r['status'], ['waiting', 'notified'], true) ? max(0, ((float) $r['unit_full'] - (float) $r['unit_paid']) * (int) $r['qty']) : 0;
         $r['product'] = Product::getProductName((int) $r['id_product'], (int) $r['id_product_attribute'], (int) $this->context->language->id);
         $r['status_label'] = $this->statusLabel($r['status']);
-        $r['balance'] = number_format(max(0, ((float) $r['unit_full'] - (float) $r['unit_paid']) * (int) $r['qty'] * $tax), 2);
-        $r['reference'] = (new Order((int) $r['id_order']))->reference;
+        $r['tone'] = ['waiting' => 'wait', 'full' => 'wait', 'notified' => 'action', 'shipped' => 'done', 'paid' => 'done'][$r['status']] ?? 'wait';
+        $r['balance'] = $due > 0 ? $this->context->getCurrentLocale()->formatPrice($due, $iso) : '—';
+        $r['reference'] = $order->reference;
+        $r['date'] = Tools::displayDate($r['date_add']);
+        $r['order_url'] = $this->context->link->getAdminLink('AdminOrders', true, ['route' => 'admin_orders_view', 'orderId' => (int) $r['id_order']], ['id_order' => (int) $r['id_order'], 'vieworder' => 1]);
 
         return $r;
+    }
+
+    /** Name, picture and price of a product for the back office lists and the live preview. */
+    private function productCard(int $id): array
+    {
+        $lang = (int) $this->context->language->id;
+        $product = new Product($id, false, $lang);
+        $cover = Image::getCover($id);
+
+        return [
+            'id' => $id,
+            'name' => (string) $product->name,
+            'image' => $cover ? $this->context->link->getImageLink((string) $product->link_rewrite, (string) $cover['id_image'], ImageType::getFormattedName('small')) : '',
+            'price' => round((float) Product::getPriceStatic($id, true, null, 2), 2),
+        ];
+    }
+
+    private function modeLabel(array $r): string
+    {
+        $amount = $r['amount_type'] === 'percent'
+            ? rtrim(rtrim(number_format((float) $r['amount'], 2, '.', ''), '0'), '.') . '%'
+            : $this->context->getCurrentLocale()->formatPrice((float) $r['amount'], $this->context->currency->iso_code);
+
+        return match ($r['mode']) {
+            'partial' => $this->trans('Deposit', [], self::D) . ' · ' . $amount,
+            'dynamic' => $this->trans('Customer chooses', [], self::D) . ' · min. ' . $amount,
+            default => $this->trans('Full payment', [], self::D),
+        };
+    }
+
+    /** on = selling as pre-order, partly = some combinations only, off = in stock. */
+    private function stockState(int $id): string
+    {
+        $rows = Db::getInstance()->executeS('SELECT id_product_attribute, quantity FROM ' . _DB_PREFIX_ . 'stock_available WHERE id_product = ' . $id . ' AND id_shop = ' . (int) $this->context->shop->id) ?: [];
+        $combos = array_filter($rows, fn ($r) => (int) $r['id_product_attribute'] > 0);
+        $check = $combos ?: $rows;
+        $empty = count(array_filter($check, fn ($r) => (int) $r['quantity'] <= 0));
+
+        return $empty === 0 ? 'off' : ($empty === count($check) ? 'on' : 'partly');
     }
 
     public function getContent(): string
@@ -580,7 +624,7 @@ class Preorder extends Module
         if (Tools::getValue('po_search') !== false && Tools::getValue('po_search') !== '') {
             header('Content-Type: application/json');
             $found = Product::searchByName((int) $this->context->language->id, (string) Tools::getValue('po_search')) ?: [];
-            exit(json_encode(array_map(fn ($p) => ['id' => (int) $p['id_product'], 'name' => $p['name']], array_slice($found, 0, 15))));
+            exit(json_encode(array_map(fn ($p) => $this->productCard((int) $p['id_product']), array_slice($found, 0, 10))));
         }
         if (Tools::isSubmit('po_save')) {
             $out .= $this->saveRule();
@@ -599,28 +643,63 @@ class Preorder extends Module
         }
         $p = _DB_PREFIX_;
         $lang = (int) $this->context->language->id;
-        $rules = $db->executeS("SELECT r.*, pl.name, sa.quantity,
-                (SELECT COALESCE(SUM(o.qty),0) FROM {$p}preorder_order o WHERE o.id_product = r.id_product) reserved
-            FROM {$p}preorder_rule r LEFT JOIN {$p}product_lang pl ON (pl.id_product = r.id_product AND pl.id_lang = $lang AND pl.id_shop = " . (int) $this->context->shop->id . ")
-            LEFT JOIN {$p}stock_available sa ON (sa.id_product = r.id_product AND sa.id_product_attribute = 0 AND sa.id_shop = " . (int) $this->context->shop->id . ') ORDER BY r.id_product DESC') ?: [];
-        $demand = $db->executeS("SELECT o.id_product, pl.name, COUNT(DISTINCT o.id_customer) customers, SUM(o.qty) units,
-                SUM(o.qty * o.unit_full) value, SUM(o.qty * o.unit_paid) collected
-            FROM {$p}preorder_order o LEFT JOIN {$p}product_lang pl ON (pl.id_product = o.id_product AND pl.id_lang = $lang AND pl.id_shop = " . (int) $this->context->shop->id . ')
-            GROUP BY o.id_product ORDER BY units DESC LIMIT 100') ?: [];
-        $orders = array_map(fn ($r) => $this->presentOrder($r), $db->executeS("SELECT * FROM {$p}preorder_order ORDER BY id_preorder DESC LIMIT 100") ?: []);
-        $base = $this->context->link->getAdminLink('AdminModules', true, [], ['configure' => $this->name]);
+        $idShop = (int) $this->context->shop->id;
+        $locale = $this->context->getCurrentLocale();
+        $iso = $this->context->currency->iso_code;
+        $money = fn ($v) => $locale->formatPrice((float) $v, $iso);
+
+        $rules = [];
+        foreach ($db->executeS("SELECT * FROM {$p}preorder_rule ORDER BY id_product DESC") ?: [] as $r) {
+            $id = (int) $r['id_product'];
+            $counts = $db->getRow("SELECT COALESCE(SUM(qty),0) reserved, COALESCE(SUM(IF(status IN ('waiting','full'), qty, 0)),0) waiting FROM {$p}preorder_order WHERE id_product = $id");
+            $rules[] = $this->productCard($id) + [
+                'mode' => $r['mode'], 'amount_type' => $r['amount_type'], 'amount' => (float) $r['amount'],
+                'mode_label' => $this->modeLabel($r),
+                'date' => $r['available_date'] ? date('Y-m-d\\TH:i', strtotime($r['available_date'])) : '',
+                'date_label' => $r['available_date'] ? Tools::displayDate($r['available_date']) : '',
+                'max' => (int) $r['max_qty'], 'groups' => array_filter(explode(',', $r['groups'])), 'countries' => array_filter(explode(',', $r['countries'])),
+                'state' => $this->stockState($id), 'reserved' => (int) $counts['reserved'], 'waiting' => (int) $counts['waiting'],
+            ];
+        }
+        // Amounts are stored in each order's currency; totals are shown in the shop's.
+        $amounts = "SUM(o.qty * o.unit_full / ord.conversion_rate) value, SUM(o.qty * IF(o.status = 'paid', o.unit_full, o.unit_paid) / ord.conversion_rate) collected";
+        $demand = $db->executeS("SELECT o.id_product, COUNT(DISTINCT o.id_customer) customers, SUM(o.qty) units, $amounts
+            FROM {$p}preorder_order o JOIN {$p}orders ord ON (ord.id_order = o.id_order)
+            GROUP BY o.id_product ORDER BY units DESC LIMIT 100") ?: [];
+        $top = $demand ? max(array_column($demand, 'units')) : 1;
+        $demand = array_map(fn ($d) => $this->productCard((int) $d['id_product']) + [
+            'customers' => (int) $d['customers'], 'units' => (int) $d['units'], 'share' => round((int) $d['units'] / max(1, (int) $top) * 100),
+            'value' => $money($d['value']), 'collected' => $money($d['collected']),
+        ], $demand);
+        $t = $db->getRow("SELECT COALESCE(SUM(o.qty),0) units, COALESCE(SUM(o.qty * o.unit_full / ord.conversion_rate),0) value,
+                COALESCE(SUM(o.qty * IF(o.status = 'paid', o.unit_full, o.unit_paid) / ord.conversion_rate),0) collected,
+                COALESCE(SUM(IF(o.status IN ('waiting','notified'), o.qty * (o.unit_full - o.unit_paid), 0) / ord.conversion_rate),0) due
+            FROM {$p}preorder_order o JOIN {$p}orders ord ON (ord.id_order = o.id_order)");
+        $orders = array_map(fn ($r) => $this->presentOrder($r), $db->executeS("SELECT * FROM {$p}preorder_order ORDER BY id_preorder DESC LIMIT 200") ?: []);
+        $docs = is_file(__DIR__ . '/docs/preorder-' . $this->context->language->iso_code . '.pdf') ? $this->context->language->iso_code : 'en';
         $this->context->smarty->assign([
             'author_img' => $this->_path . 'views/img/author.jpg',
-            'po_base' => $base,
+            'po_base' => $this->context->link->getAdminLink('AdminModules', true, [], ['configure' => $this->name]),
             'po_rules' => $rules,
+            'po_rules_json' => json_encode($rules, JSON_UNESCAPED_UNICODE),
             'po_demand' => $demand,
             'po_orders' => $orders,
             'po_groups' => Group::getGroups($lang),
             'po_countries' => Country::getCountries($lang, true),
-            'po_docs' => $this->_path . 'docs/preorder-' . (is_file(__DIR__ . '/docs/preorder-' . $this->context->language->iso_code . '.pdf') ? $this->context->language->iso_code : 'en') . '.pdf',
+            'po_units' => (int) $t['units'],
+            'po_value' => $money($t['value']),
+            'po_collected' => $money($t['collected']),
+            'po_due' => $money($t['due']),
+            'po_iso' => $iso,
+            'po_locale' => $this->context->language->locale ?: 'en-US',
+            'po_docs' => $this->_path . 'docs/preorder-' . $docs . '.pdf',
+            'po_logo' => $this->_path . 'views/img/logo-512.png',
+            'po_css' => $this->_path . 'views/css/admin.css?v=' . filemtime(__DIR__ . '/views/css/admin.css'),
+            'po_js' => $this->_path . 'views/js/admin.js?v=' . filemtime(__DIR__ . '/views/js/admin.js'),
+            'po_flash' => $out,
         ]);
 
-        return $this->display(__FILE__, 'views/templates/admin/author.tpl') . $out . $this->display(__FILE__, 'views/templates/admin/config.tpl');
+        return $this->display(__FILE__, 'views/templates/admin/author.tpl') . $this->display(__FILE__, 'views/templates/admin/config.tpl');
     }
 
     private function saveRule(): string

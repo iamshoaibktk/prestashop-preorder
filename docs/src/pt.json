@@ -46,7 +46,7 @@
    "title": "Quando o stock chega",
    "content": [
     {
-     "p": "Ao adicionar stock, os clientes recebem um email; quem tem saldo recebe uma ligação de pagamento segura. A encomenda do saldo tem envio grátis e não reduz o stock outra vez. **Avisar os clientes** envia os emails manualmente."
+     "p": "Ao adicionar stock, os clientes recebem um email; quem tem saldo recebe uma ligação de pagamento segura. A encomenda do saldo tem envio grátis e não reduz o stock outra vez. **Avisar** envia os emails manualmente."
     }
    ]
   },
@@ -54,7 +54,7 @@
    "title": "A saber",
    "content": [
     {
-     "p": "As regras aplicam-se a todas as combinações. O sinal é o valor da encomenda, por isso cada pagamento tem a sua fatura. A tabela **Procura de produtos** mostra clientes, unidades e valor."
+     "p": "As regras aplicam-se a todas as combinações. O sinal é o valor da encomenda, por isso cada pagamento tem a sua fatura. A tabela **Procura** mostra clientes, unidades e valor."
     }
    ]
   },

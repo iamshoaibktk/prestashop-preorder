@@ -46,7 +46,7 @@
    "title": "When stock arrives",
    "content": [
     {
-     "p": "When stock is added, customers are emailed automatically; those with a balance get a secure payment link. The balance order has free shipping and does not reduce stock again. **Notify customers now** sends the emails by hand."
+     "p": "When stock is added, customers are emailed automatically; those with a balance get a secure payment link. The balance order has free shipping and does not reduce stock again. **Notify** sends the emails by hand."
     }
    ]
   },
@@ -54,7 +54,7 @@
    "title": "Good to know",
    "content": [
     {
-     "p": "Rules apply to all combinations of a product. Deposits appear as the order amount, so each payment has its own invoice. The **Product demand** table shows customers, units and value per product."
+     "p": "Rules apply to all combinations of a product. Deposits appear as the order amount, so each payment has its own invoice. The **Demand** table shows customers, units and value per product."
     }
    ]
   },

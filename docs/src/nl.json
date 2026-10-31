@@ -46,7 +46,7 @@
    "title": "Als de voorraad binnenkomt",
    "content": [
     {
-     "p": "Bij nieuwe voorraad krijgen klanten een e-mail; wie nog moet betalen krijgt een veilige betaallink. De restbestelling heeft gratis verzending en verlaagt de voorraad niet opnieuw. **Klanten verwittigen** verstuurt de e-mails handmatig."
+     "p": "Bij nieuwe voorraad krijgen klanten een e-mail; wie nog moet betalen krijgt een veilige betaallink. De restbestelling heeft gratis verzending en verlaagt de voorraad niet opnieuw. **Verwittigen** verstuurt de e-mails handmatig."
     }
    ]
   },
@@ -54,7 +54,7 @@
    "title": "Goed om te weten",
    "content": [
     {
-     "p": "Regels gelden voor alle combinaties. De aanbetaling is het orderbedrag, dus elke betaling heeft een eigen factuur. De tabel **Productvraag** toont klanten, aantallen en waarde."
+     "p": "Regels gelden voor alle combinaties. De aanbetaling is het orderbedrag, dus elke betaling heeft een eigen factuur. De tabel **Vraag** toont klanten, aantallen en waarde."
     }
    ]
   },

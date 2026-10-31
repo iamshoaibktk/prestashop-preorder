@@ -44,50 +44,6 @@
       "pt-PT": "Definições atualizadas.",
       "ru-RU": "Настройки обновлены."
     },
-    "Settings": {
-      "fr-FR": "Paramètres",
-      "es-ES": "Configuración",
-      "it-IT": "Impostazioni",
-      "pl-PL": "Ustawienia",
-      "de-DE": "Einstellungen",
-      "cs-CZ": "Nastavení",
-      "nl-NL": "Instellingen",
-      "pt-PT": "Definições",
-      "ru-RU": "Настройки"
-    },
-    "Enable": {
-      "fr-FR": "Activer",
-      "es-ES": "Activar",
-      "it-IT": "Abilita",
-      "pl-PL": "Włącz",
-      "de-DE": "Aktivieren",
-      "cs-CZ": "Povolit",
-      "nl-NL": "Inschakelen",
-      "pt-PT": "Ativar",
-      "ru-RU": "Включить"
-    },
-    "Yes": {
-      "fr-FR": "Oui",
-      "es-ES": "Sí",
-      "it-IT": "Sì",
-      "pl-PL": "Tak",
-      "de-DE": "Ja",
-      "cs-CZ": "Ano",
-      "nl-NL": "Ja",
-      "pt-PT": "Sim",
-      "ru-RU": "Да"
-    },
-    "No": {
-      "fr-FR": "Non",
-      "es-ES": "No",
-      "it-IT": "No",
-      "pl-PL": "Nie",
-      "de-DE": "Nein",
-      "cs-CZ": "Ne",
-      "nl-NL": "Nee",
-      "pt-PT": "Não",
-      "ru-RU": "Нет"
-    },
     "Save": {
       "fr-FR": "Enregistrer",
       "es-ES": "Guardar",
@@ -319,17 +275,6 @@
       "pt-PT": "Saldo em dívida (s/ IVA)",
       "ru-RU": "К доплате (без налога)"
     },
-    "Add or update a pre-order product": {
-      "fr-FR": "Ajouter ou modifier un produit en précommande",
-      "es-ES": "Añadir o actualizar un producto en reserva",
-      "it-IT": "Aggiungi o aggiorna un prodotto in preordine",
-      "pl-PL": "Dodaj lub zmień produkt w przedsprzedaży",
-      "de-DE": "Vorbestellprodukt hinzufügen oder ändern",
-      "cs-CZ": "Přidat nebo upravit produkt k předobjednávce",
-      "nl-NL": "Pre-orderproduct toevoegen of bijwerken",
-      "pt-PT": "Adicionar ou atualizar produto em pré-encomenda",
-      "ru-RU": "Добавить или изменить товар предзаказа"
-    },
     "User guide (PDF)": {
       "fr-FR": "Guide d'utilisation (PDF)",
       "es-ES": "Guía de usuario (PDF)",
@@ -396,28 +341,6 @@
       "pt-PT": "Sinal",
       "ru-RU": "Депозит"
     },
-    "Customer chooses the amount, above a minimum": {
-      "fr-FR": "Le client choisit le montant, au-dessus d'un minimum",
-      "es-ES": "El cliente elige el importe, sobre un mínimo",
-      "it-IT": "Il cliente sceglie l'importo, sopra un minimo",
-      "pl-PL": "Klient wybiera kwotę powyżej minimum",
-      "de-DE": "Kunde wählt den Betrag über einem Minimum",
-      "cs-CZ": "Zákazník volí částku nad minimem",
-      "nl-NL": "Klant kiest het bedrag boven een minimum",
-      "pt-PT": "O cliente escolhe o valor, acima de um mínimo",
-      "ru-RU": "Клиент выбирает сумму выше минимума"
-    },
-    "Deposit or minimum": {
-      "fr-FR": "Acompte ou minimum",
-      "es-ES": "Depósito o mínimo",
-      "it-IT": "Acconto o minimo",
-      "pl-PL": "Zaliczka lub minimum",
-      "de-DE": "Anzahlung oder Minimum",
-      "cs-CZ": "Záloha nebo minimum",
-      "nl-NL": "Aanbetaling of minimum",
-      "pt-PT": "Sinal ou mínimo",
-      "ru-RU": "Депозит или минимум"
-    },
     "Fixed amount, tax included": {
       "fr-FR": "Montant fixe, TTC",
       "es-ES": "Importe fijo, con IVA",
@@ -429,72 +352,6 @@
       "pt-PT": "Valor fixo, c/ IVA",
       "ru-RU": "Фиксированная сумма с налогом"
     },
-    "Available from (countdown, optional)": {
-      "fr-FR": "Disponible à partir du (compte à rebours, facultatif)",
-      "es-ES": "Disponible desde (cuenta atrás, opcional)",
-      "it-IT": "Disponibile da (conto alla rovescia, facoltativo)",
-      "pl-PL": "Dostępne od (odliczanie, opcjonalnie)",
-      "de-DE": "Verfügbar ab (Countdown, optional)",
-      "cs-CZ": "Dostupné od (odpočet, volitelné)",
-      "nl-NL": "Beschikbaar vanaf (aftelling, optioneel)",
-      "pt-PT": "Disponível a partir de (contagem, opcional)",
-      "ru-RU": "Доступно с (отсчёт, необязательно)"
-    },
-    "Maximum units to pre-order (0 = no limit)": {
-      "fr-FR": "Unités maximum en précommande (0 = sans limite)",
-      "es-ES": "Unidades máximas en reserva (0 = sin límite)",
-      "it-IT": "Unità massime in preordine (0 = nessun limite)",
-      "pl-PL": "Maks. liczba sztuk (0 = bez limitu)",
-      "de-DE": "Maximale Stückzahl (0 = unbegrenzt)",
-      "cs-CZ": "Maximum kusů (0 = bez omezení)",
-      "nl-NL": "Maximum aantal (0 = onbeperkt)",
-      "pt-PT": "Unidades máximas (0 = sem limite)",
-      "ru-RU": "Макс. количество (0 = без ограничений)"
-    },
-    "Only these customer groups (none selected = everyone)": {
-      "fr-FR": "Uniquement ces groupes de clients (aucun = tout le monde)",
-      "es-ES": "Solo estos grupos de clientes (ninguno = todos)",
-      "it-IT": "Solo questi gruppi di clienti (nessuno = tutti)",
-      "pl-PL": "Tylko te grupy klientów (brak = wszyscy)",
-      "de-DE": "Nur diese Kundengruppen (keine = alle)",
-      "cs-CZ": "Jen tyto skupiny zákazníků (žádná = všichni)",
-      "nl-NL": "Alleen deze klantgroepen (geen = iedereen)",
-      "pt-PT": "Apenas estes grupos de clientes (nenhum = todos)",
-      "ru-RU": "Только эти группы клиентов (ни одной = все)"
-    },
-    "Only these countries (none selected = everywhere)": {
-      "fr-FR": "Uniquement ces pays (aucun = partout)",
-      "es-ES": "Solo estos países (ninguno = todos)",
-      "it-IT": "Solo questi paesi (nessuno = ovunque)",
-      "pl-PL": "Tylko te kraje (brak = wszędzie)",
-      "de-DE": "Nur diese Länder (keine = überall)",
-      "cs-CZ": "Jen tyto země (žádná = všude)",
-      "nl-NL": "Alleen deze landen (geen = overal)",
-      "pt-PT": "Apenas estes países (nenhum = todos)",
-      "ru-RU": "Только эти страны (ни одной = везде)"
-    },
-    "Pre-order products": {
-      "fr-FR": "Produits en précommande",
-      "es-ES": "Productos en reserva",
-      "it-IT": "Prodotti in preordine",
-      "pl-PL": "Produkty w przedsprzedaży",
-      "de-DE": "Vorbestellprodukte",
-      "cs-CZ": "Produkty k předobjednávce",
-      "nl-NL": "Pre-orderproducten",
-      "pt-PT": "Produtos em pré-encomenda",
-      "ru-RU": "Товары предзаказа"
-    },
-    "Stock": {
-      "fr-FR": "Stock",
-      "es-ES": "Stock",
-      "it-IT": "Magazzino",
-      "pl-PL": "Stan",
-      "de-DE": "Bestand",
-      "cs-CZ": "Sklad",
-      "nl-NL": "Voorraad",
-      "pt-PT": "Stock",
-      "ru-RU": "Остаток"
-    },
     "Reserved": {
       "fr-FR": "Réservé",
       "es-ES": "Reservado",
@@ -505,28 +362,6 @@
       "nl-NL": "Gereserveerd",
       "pt-PT": "Reservado",
       "ru-RU": "Зарезервировано"
-    },
-    "Available from": {
-      "fr-FR": "Disponible à partir du",
-      "es-ES": "Disponible desde",
-      "it-IT": "Disponibile da",
-      "pl-PL": "Dostępne od",
-      "de-DE": "Verfügbar ab",
-      "cs-CZ": "Dostupné od",
-      "nl-NL": "Beschikbaar vanaf",
-      "pt-PT": "Disponível a partir de",
-      "ru-RU": "Доступно с"
-    },
-    "Notify customers now": {
-      "fr-FR": "Prévenir les clients",
-      "es-ES": "Avisar a los clientes",
-      "it-IT": "Avvisa i clienti",
-      "pl-PL": "Powiadom klientów",
-      "de-DE": "Kunden benachrichtigen",
-      "cs-CZ": "Upozornit zákazníky",
-      "nl-NL": "Klanten verwittigen",
-      "pt-PT": "Avisar os clientes",
-      "ru-RU": "Уведомить клиентов"
     },
     "Remove": {
       "fr-FR": "Supprimer",
@@ -550,17 +385,6 @@
       "pt-PT": "Ainda sem produtos em pré-encomenda.",
       "ru-RU": "Товаров предзаказа пока нет."
     },
-    "Product demand": {
-      "fr-FR": "Demande par produit",
-      "es-ES": "Demanda de productos",
-      "it-IT": "Domanda dei prodotti",
-      "pl-PL": "Popyt na produkty",
-      "de-DE": "Produktnachfrage",
-      "cs-CZ": "Poptávka po produktech",
-      "nl-NL": "Productvraag",
-      "pt-PT": "Procura de produtos",
-      "ru-RU": "Спрос на товары"
-    },
     "Customers": {
       "fr-FR": "Clients",
       "es-ES": "Clientes",
@@ -582,28 +406,6 @@
       "nl-NL": "Aantal",
       "pt-PT": "Unidades",
       "ru-RU": "Штук"
-    },
-    "Value (tax excl.)": {
-      "fr-FR": "Valeur (HT)",
-      "es-ES": "Valor (sin IVA)",
-      "it-IT": "Valore (IVA escl.)",
-      "pl-PL": "Wartość (netto)",
-      "de-DE": "Wert (netto)",
-      "cs-CZ": "Hodnota (bez DPH)",
-      "nl-NL": "Waarde (excl. btw)",
-      "pt-PT": "Valor (s/ IVA)",
-      "ru-RU": "Сумма (без налога)"
-    },
-    "Collected (tax excl.)": {
-      "fr-FR": "Encaissé (HT)",
-      "es-ES": "Cobrado (sin IVA)",
-      "it-IT": "Incassato (IVA escl.)",
-      "pl-PL": "Zebrano (netto)",
-      "de-DE": "Eingenommen (netto)",
-      "cs-CZ": "Vybráno (bez DPH)",
-      "nl-NL": "Ontvangen (excl. btw)",
-      "pt-PT": "Recebido (s/ IVA)",
-      "ru-RU": "Собрано (без налога)"
     },
     "Pre-orders": {
       "fr-FR": "Précommandes",
@@ -637,6 +439,600 @@
       "nl-NL": "Status",
       "pt-PT": "Estado",
       "ru-RU": "Статус"
+    },
+    "Pre-Order": {
+      "fr-FR": "Précommande",
+      "es-ES": "Reserva",
+      "it-IT": "Preordine",
+      "pl-PL": "Przedsprzedaż",
+      "de-DE": "Vorbestellung",
+      "cs-CZ": "Předobjednávka",
+      "nl-NL": "Pre-order",
+      "pt-PT": "Pré-encomenda",
+      "ru-RU": "Предзаказ"
+    },
+    "Keep selling products that are out of stock or not released yet.": {
+      "fr-FR": "Continuez à vendre les produits en rupture ou pas encore sortis.",
+      "es-ES": "Siga vendiendo productos agotados o aún sin lanzar.",
+      "it-IT": "Continua a vendere prodotti esauriti o non ancora usciti.",
+      "pl-PL": "Sprzedawaj produkty niedostępne lub jeszcze niewydane.",
+      "de-DE": "Verkaufen Sie auch ausverkaufte oder noch nicht erschienene Produkte.",
+      "cs-CZ": "Prodávejte i vyprodané nebo dosud nevydané produkty.",
+      "nl-NL": "Blijf uitverkochte of nog niet verschenen producten verkopen.",
+      "pt-PT": "Continue a vender produtos esgotados ou ainda não lançados.",
+      "ru-RU": "Продолжайте продавать отсутствующие и ещё не вышедшие товары."
+    },
+    "Overview": {
+      "fr-FR": "Vue d'ensemble",
+      "es-ES": "Resumen",
+      "it-IT": "Panoramica",
+      "pl-PL": "Przegląd",
+      "de-DE": "Überblick",
+      "cs-CZ": "Přehled",
+      "nl-NL": "Overzicht",
+      "pt-PT": "Resumo",
+      "ru-RU": "Обзор"
+    },
+    "Units reserved": {
+      "fr-FR": "Unités réservées",
+      "es-ES": "Unidades reservadas",
+      "it-IT": "Unità riservate",
+      "pl-PL": "Zarezerwowane sztuki",
+      "de-DE": "Reservierte Stück",
+      "cs-CZ": "Rezervované kusy",
+      "nl-NL": "Gereserveerd aantal",
+      "pt-PT": "Unidades reservadas",
+      "ru-RU": "Зарезервировано штук"
+    },
+    "Order value": {
+      "fr-FR": "Valeur des commandes",
+      "es-ES": "Valor de pedidos",
+      "it-IT": "Valore ordini",
+      "pl-PL": "Wartość zamówień",
+      "de-DE": "Bestellwert",
+      "cs-CZ": "Hodnota objednávek",
+      "nl-NL": "Orderwaarde",
+      "pt-PT": "Valor das encomendas",
+      "ru-RU": "Сумма заказов"
+    },
+    "Collected": {
+      "fr-FR": "Encaissé",
+      "es-ES": "Cobrado",
+      "it-IT": "Incassato",
+      "pl-PL": "Zebrano",
+      "de-DE": "Eingenommen",
+      "cs-CZ": "Vybráno",
+      "nl-NL": "Ontvangen",
+      "pt-PT": "Recebido",
+      "ru-RU": "Собрано"
+    },
+    "Balance to collect": {
+      "fr-FR": "Solde à encaisser",
+      "es-ES": "Saldo por cobrar",
+      "it-IT": "Saldo da incassare",
+      "pl-PL": "Do pobrania",
+      "de-DE": "Offener Betrag",
+      "cs-CZ": "Zbývá vybrat",
+      "nl-NL": "Nog te ontvangen",
+      "pt-PT": "Saldo a receber",
+      "ru-RU": "Осталось собрать"
+    },
+    "Amounts exclude tax and shipping.": {
+      "fr-FR": "Montants hors taxes et hors livraison.",
+      "es-ES": "Importes sin impuestos ni envío.",
+      "it-IT": "Importi senza imposte né spedizione.",
+      "pl-PL": "Kwoty bez podatku i wysyłki.",
+      "de-DE": "Beträge ohne Steuer und Versand.",
+      "cs-CZ": "Částky bez daně a dopravy.",
+      "nl-NL": "Bedragen excl. btw en verzending.",
+      "pt-PT": "Valores sem impostos nem envio.",
+      "ru-RU": "Суммы без налога и доставки."
+    },
+    "Products": {
+      "fr-FR": "Produits",
+      "es-ES": "Productos",
+      "it-IT": "Prodotti",
+      "pl-PL": "Produkty",
+      "de-DE": "Produkte",
+      "cs-CZ": "Produkty",
+      "nl-NL": "Producten",
+      "pt-PT": "Produtos",
+      "ru-RU": "Товары"
+    },
+    "Demand": {
+      "fr-FR": "Demande",
+      "es-ES": "Demanda",
+      "it-IT": "Domanda",
+      "pl-PL": "Popyt",
+      "de-DE": "Nachfrage",
+      "cs-CZ": "Poptávka",
+      "nl-NL": "Vraag",
+      "pt-PT": "Procura",
+      "ru-RU": "Спрос"
+    },
+    "Add product": {
+      "fr-FR": "Ajouter un produit",
+      "es-ES": "Añadir producto",
+      "it-IT": "Aggiungi prodotto",
+      "pl-PL": "Dodaj produkt",
+      "de-DE": "Produkt hinzufügen",
+      "cs-CZ": "Přidat produkt",
+      "nl-NL": "Product toevoegen",
+      "pt-PT": "Adicionar produto",
+      "ru-RU": "Добавить товар"
+    },
+    "Release date": {
+      "fr-FR": "Date de sortie",
+      "es-ES": "Fecha de lanzamiento",
+      "it-IT": "Data di uscita",
+      "pl-PL": "Data premiery",
+      "de-DE": "Erscheinungsdatum",
+      "cs-CZ": "Datum vydání",
+      "nl-NL": "Releasedatum",
+      "pt-PT": "Data de lançamento",
+      "ru-RU": "Дата выхода"
+    },
+    "Actions": {
+      "fr-FR": "Actions",
+      "es-ES": "Acciones",
+      "it-IT": "Azioni",
+      "pl-PL": "Akcje",
+      "de-DE": "Aktionen",
+      "cs-CZ": "Akce",
+      "nl-NL": "Acties",
+      "pt-PT": "Ações",
+      "ru-RU": "Действия"
+    },
+    "On pre-order": {
+      "fr-FR": "En précommande",
+      "es-ES": "En reserva",
+      "it-IT": "In preordine",
+      "pl-PL": "W przedsprzedaży",
+      "de-DE": "In Vorbestellung",
+      "cs-CZ": "V předobjednávce",
+      "nl-NL": "In pre-order",
+      "pt-PT": "Em pré-encomenda",
+      "ru-RU": "На предзаказе"
+    },
+    "Some combinations": {
+      "fr-FR": "Certaines déclinaisons",
+      "es-ES": "Algunas combinaciones",
+      "it-IT": "Alcune combinazioni",
+      "pl-PL": "Niektóre kombinacje",
+      "de-DE": "Einige Kombinationen",
+      "cs-CZ": "Některé kombinace",
+      "nl-NL": "Sommige combinaties",
+      "pt-PT": "Algumas combinações",
+      "ru-RU": "Некоторые комбинации"
+    },
+    "In stock, sold normally": {
+      "fr-FR": "En stock, vente normale",
+      "es-ES": "En stock, venta normal",
+      "it-IT": "Disponibile, vendita normale",
+      "pl-PL": "Na stanie, zwykła sprzedaż",
+      "de-DE": "Auf Lager, normaler Verkauf",
+      "cs-CZ": "Skladem, běžný prodej",
+      "nl-NL": "Op voorraad, normale verkoop",
+      "pt-PT": "Em stock, venda normal",
+      "ru-RU": "В наличии, обычная продажа"
+    },
+    "Edit": {
+      "fr-FR": "Modifier",
+      "es-ES": "Editar",
+      "it-IT": "Modifica",
+      "pl-PL": "Edytuj",
+      "de-DE": "Bearbeiten",
+      "cs-CZ": "Upravit",
+      "nl-NL": "Bewerken",
+      "pt-PT": "Editar",
+      "ru-RU": "Изменить"
+    },
+    "Notify": {
+      "fr-FR": "Prévenir",
+      "es-ES": "Avisar",
+      "it-IT": "Avvisa",
+      "pl-PL": "Powiadom",
+      "de-DE": "Benachrichtigen",
+      "cs-CZ": "Upozornit",
+      "nl-NL": "Verwittigen",
+      "pt-PT": "Avisar",
+      "ru-RU": "Уведомить"
+    },
+    "No customers are waiting": {
+      "fr-FR": "Aucun client en attente",
+      "es-ES": "Ningún cliente en espera",
+      "it-IT": "Nessun cliente in attesa",
+      "pl-PL": "Nikt nie czeka",
+      "de-DE": "Keine wartenden Kunden",
+      "cs-CZ": "Žádní čekající zákazníci",
+      "nl-NL": "Geen wachtende klanten",
+      "pt-PT": "Nenhum cliente à espera",
+      "ru-RU": "Нет ожидающих клиентов"
+    },
+    "Add a product to start taking orders on its out-of-stock page.": {
+      "fr-FR": "Ajoutez un produit pour prendre des commandes sur sa page en rupture.",
+      "es-ES": "Añada un producto para recibir pedidos en su página agotada.",
+      "it-IT": "Aggiungi un prodotto per ricevere ordini sulla sua pagina esaurita.",
+      "pl-PL": "Dodaj produkt, aby przyjmować zamówienia na jego stronie.",
+      "de-DE": "Fügen Sie ein Produkt hinzu, um auf seiner ausverkauften Seite Bestellungen anzunehmen.",
+      "cs-CZ": "Přidejte produkt a přijímejte objednávky na jeho vyprodané stránce.",
+      "nl-NL": "Voeg een product toe om bestellingen op de uitverkochte pagina aan te nemen.",
+      "pt-PT": "Adicione um produto para receber encomendas na página esgotada.",
+      "ru-RU": "Добавьте товар, чтобы принимать заказы на его странице."
+    },
+    "Balance due": {
+      "fr-FR": "Solde dû",
+      "es-ES": "Saldo pendiente",
+      "it-IT": "Saldo dovuto",
+      "pl-PL": "Do dopłaty",
+      "de-DE": "Offener Betrag",
+      "cs-CZ": "Doplatek",
+      "nl-NL": "Openstaand",
+      "pt-PT": "Saldo em dívida",
+      "ru-RU": "К доплате"
+    },
+    "No pre-orders yet.": {
+      "fr-FR": "Aucune précommande pour l'instant.",
+      "es-ES": "Aún no hay reservas.",
+      "it-IT": "Ancora nessun preordine.",
+      "pl-PL": "Brak zamówień w przedsprzedaży.",
+      "de-DE": "Noch keine Vorbestellungen.",
+      "cs-CZ": "Zatím žádné předobjednávky.",
+      "nl-NL": "Nog geen pre-orders.",
+      "pt-PT": "Ainda sem pré-encomendas.",
+      "ru-RU": "Предзаказов пока нет."
+    },
+    "They appear here as soon as a customer orders a pre-order product.": {
+      "fr-FR": "Elles apparaissent ici dès qu'un client commande un produit en précommande.",
+      "es-ES": "Aparecen aquí en cuanto un cliente pide un producto en reserva.",
+      "it-IT": "Appaiono qui appena un cliente ordina un prodotto in preordine.",
+      "pl-PL": "Pojawią się tutaj, gdy klient zamówi produkt.",
+      "de-DE": "Sie erscheinen hier, sobald ein Kunde ein Vorbestellprodukt bestellt.",
+      "cs-CZ": "Zobrazí se zde, jakmile si zákazník produkt objedná.",
+      "nl-NL": "Ze verschijnen hier zodra een klant een pre-orderproduct bestelt.",
+      "pt-PT": "Aparecem aqui assim que um cliente encomendar um produto.",
+      "ru-RU": "Они появятся здесь, когда клиент закажет товар."
+    },
+    "No demand data yet.": {
+      "fr-FR": "Pas encore de données de demande.",
+      "es-ES": "Aún no hay datos de demanda.",
+      "it-IT": "Ancora nessun dato sulla domanda.",
+      "pl-PL": "Brak danych o popycie.",
+      "de-DE": "Noch keine Nachfragedaten.",
+      "cs-CZ": "Zatím žádná data o poptávce.",
+      "nl-NL": "Nog geen vraaggegevens.",
+      "pt-PT": "Ainda sem dados de procura.",
+      "ru-RU": "Данных о спросе пока нет."
+    },
+    "See which products customers want most once pre-orders come in.": {
+      "fr-FR": "Voyez quels produits sont les plus demandés dès l'arrivée des précommandes.",
+      "es-ES": "Vea qué productos se piden más cuando lleguen las reservas.",
+      "it-IT": "Scopri i prodotti più richiesti appena arrivano i preordini.",
+      "pl-PL": "Zobacz, które produkty są najbardziej pożądane.",
+      "de-DE": "Sehen Sie, welche Produkte am gefragtesten sind.",
+      "cs-CZ": "Uvidíte, o které produkty je největší zájem.",
+      "nl-NL": "Zie welke producten het populairst zijn zodra pre-orders binnenkomen.",
+      "pt-PT": "Veja os produtos mais procurados quando chegarem pré-encomendas.",
+      "ru-RU": "Узнайте, какие товары востребованы больше всего."
+    },
+    "New pre-order product": {
+      "fr-FR": "Nouveau produit en précommande",
+      "es-ES": "Nuevo producto en reserva",
+      "it-IT": "Nuovo prodotto in preordine",
+      "pl-PL": "Nowy produkt w przedsprzedaży",
+      "de-DE": "Neues Vorbestellprodukt",
+      "cs-CZ": "Nový produkt k předobjednávce",
+      "nl-NL": "Nieuw pre-orderproduct",
+      "pt-PT": "Novo produto em pré-encomenda",
+      "ru-RU": "Новый товар предзаказа"
+    },
+    "Edit pre-order product": {
+      "fr-FR": "Modifier le produit en précommande",
+      "es-ES": "Editar producto en reserva",
+      "it-IT": "Modifica prodotto in preordine",
+      "pl-PL": "Edytuj produkt w przedsprzedaży",
+      "de-DE": "Vorbestellprodukt bearbeiten",
+      "cs-CZ": "Upravit produkt k předobjednávce",
+      "nl-NL": "Pre-orderproduct bewerken",
+      "pt-PT": "Editar produto em pré-encomenda",
+      "ru-RU": "Изменить товар предзаказа"
+    },
+    "Deposit amount": {
+      "fr-FR": "Montant de l'acompte",
+      "es-ES": "Importe del depósito",
+      "it-IT": "Importo dell'acconto",
+      "pl-PL": "Kwota zaliczki",
+      "de-DE": "Anzahlungsbetrag",
+      "cs-CZ": "Výše zálohy",
+      "nl-NL": "Aanbetalingsbedrag",
+      "pt-PT": "Valor do sinal",
+      "ru-RU": "Сумма депозита"
+    },
+    "Minimum amount": {
+      "fr-FR": "Montant minimum",
+      "es-ES": "Importe mínimo",
+      "it-IT": "Importo minimo",
+      "pl-PL": "Kwota minimalna",
+      "de-DE": "Mindestbetrag",
+      "cs-CZ": "Minimální částka",
+      "nl-NL": "Minimumbedrag",
+      "pt-PT": "Valor mínimo",
+      "ru-RU": "Минимальная сумма"
+    },
+    "No products found": {
+      "fr-FR": "Aucun produit trouvé",
+      "es-ES": "No se encontraron productos",
+      "it-IT": "Nessun prodotto trovato",
+      "pl-PL": "Nie znaleziono produktów",
+      "de-DE": "Keine Produkte gefunden",
+      "cs-CZ": "Žádné produkty nenalezeny",
+      "nl-NL": "Geen producten gevonden",
+      "pt-PT": "Nenhum produto encontrado",
+      "ru-RU": "Товары не найдены"
+    },
+    "Pick a product from the list.": {
+      "fr-FR": "Choisissez un produit dans la liste.",
+      "es-ES": "Elija un producto de la lista.",
+      "it-IT": "Scegli un prodotto dall'elenco.",
+      "pl-PL": "Wybierz produkt z listy.",
+      "de-DE": "Wählen Sie ein Produkt aus der Liste.",
+      "cs-CZ": "Vyberte produkt ze seznamu.",
+      "nl-NL": "Kies een product uit de lijst.",
+      "pt-PT": "Escolha um produto da lista.",
+      "ru-RU": "Выберите товар из списка."
+    },
+    "Take %product% off pre-order? Existing pre-orders are kept.": {
+      "fr-FR": "Retirer %product% de la précommande ? Les précommandes existantes sont conservées.",
+      "es-ES": "¿Quitar %product% de reserva? Las reservas existentes se conservan.",
+      "it-IT": "Togliere %product% dal preordine? I preordini esistenti restano.",
+      "pl-PL": "Wycofać %product% z przedsprzedaży? Istniejące zamówienia pozostaną.",
+      "de-DE": "%product% aus der Vorbestellung nehmen? Bestehende Vorbestellungen bleiben erhalten.",
+      "cs-CZ": "Odebrat %product% z předobjednávek? Stávající předobjednávky zůstanou.",
+      "nl-NL": "%product% uit pre-order halen? Bestaande pre-orders blijven behouden.",
+      "pt-PT": "Retirar %product% da pré-encomenda? As existentes mantêm-se.",
+      "ru-RU": "Снять %product% с предзаказа? Существующие предзаказы сохранятся."
+    },
+    "Email the %count% waiting customers of %product% now?": {
+      "fr-FR": "Envoyer un e-mail maintenant aux %count% clients en attente de %product% ?",
+      "es-ES": "¿Enviar ahora un correo a los %count% clientes que esperan %product%?",
+      "it-IT": "Inviare ora un'email ai %count% clienti in attesa di %product%?",
+      "pl-PL": "Wysłać teraz e-mail do %count% klientów czekających na %product%?",
+      "de-DE": "Jetzt die %count% wartenden Kunden von %product% benachrichtigen?",
+      "cs-CZ": "Poslat nyní e-mail %count% zákazníkům čekajícím na %product%?",
+      "nl-NL": "Nu de %count% wachtende klanten van %product% mailen?",
+      "pt-PT": "Enviar agora email aos %count% clientes à espera de %product%?",
+      "ru-RU": "Отправить письмо %count% клиентам, ожидающим %product%?"
+    },
+    "Change": {
+      "fr-FR": "Changer",
+      "es-ES": "Cambiar",
+      "it-IT": "Cambia",
+      "pl-PL": "Zmień",
+      "de-DE": "Ändern",
+      "cs-CZ": "Změnit",
+      "nl-NL": "Wijzigen",
+      "pt-PT": "Alterar",
+      "ru-RU": "Изменить"
+    },
+    "What customers pay": {
+      "fr-FR": "Ce que paient les clients",
+      "es-ES": "Lo que pagan los clientes",
+      "it-IT": "Quanto pagano i clienti",
+      "pl-PL": "Co płacą klienci",
+      "de-DE": "Was Kunden zahlen",
+      "cs-CZ": "Co zákazníci platí",
+      "nl-NL": "Wat klanten betalen",
+      "pt-PT": "O que os clientes pagam",
+      "ru-RU": "Что платят клиенты"
+    },
+    "The whole price at checkout. Best for low-priced products.": {
+      "fr-FR": "Le prix complet à la commande. Idéal pour les petits prix.",
+      "es-ES": "El precio completo al pagar. Ideal para productos baratos.",
+      "it-IT": "Tutto il prezzo al checkout. Ideale per prodotti economici.",
+      "pl-PL": "Cała cena przy zamówieniu. Dobre dla tanich produktów.",
+      "de-DE": "Der volle Preis an der Kasse. Ideal für günstige Produkte.",
+      "cs-CZ": "Celá cena v pokladně. Vhodné pro levné produkty.",
+      "nl-NL": "De volledige prijs bij het afrekenen. Ideaal voor goedkope producten.",
+      "pt-PT": "O preço total no checkout. Ideal para produtos baratos.",
+      "ru-RU": "Вся цена при заказе. Подходит для недорогих товаров."
+    },
+    "A part now, the rest when the product arrives.": {
+      "fr-FR": "Une partie maintenant, le reste à l'arrivée du produit.",
+      "es-ES": "Una parte ahora, el resto cuando llegue el producto.",
+      "it-IT": "Una parte ora, il resto all'arrivo del prodotto.",
+      "pl-PL": "Część teraz, reszta po dostawie.",
+      "de-DE": "Ein Teil jetzt, der Rest bei Eintreffen.",
+      "cs-CZ": "Část nyní, zbytek po naskladnění.",
+      "nl-NL": "Een deel nu, de rest bij levering.",
+      "pt-PT": "Uma parte agora, o resto quando chegar.",
+      "ru-RU": "Часть сейчас, остаток при поступлении."
+    },
+    "Customer chooses": {
+      "fr-FR": "Au choix du client",
+      "es-ES": "A elección del cliente",
+      "it-IT": "A scelta del cliente",
+      "pl-PL": "Wybór klienta",
+      "de-DE": "Kundenwahl",
+      "cs-CZ": "Volba zákazníka",
+      "nl-NL": "Keuze van de klant",
+      "pt-PT": "À escolha do cliente",
+      "ru-RU": "На выбор клиента"
+    },
+    "Any amount above your minimum, the rest later.": {
+      "fr-FR": "Tout montant au-dessus de votre minimum, le reste plus tard.",
+      "es-ES": "Cualquier importe sobre su mínimo, el resto después.",
+      "it-IT": "Qualsiasi importo sopra il minimo, il resto dopo.",
+      "pl-PL": "Dowolna kwota powyżej minimum, reszta później.",
+      "de-DE": "Jeder Betrag über Ihrem Minimum, der Rest später.",
+      "cs-CZ": "Libovolná částka nad minimem, zbytek později.",
+      "nl-NL": "Elk bedrag boven uw minimum, de rest later.",
+      "pt-PT": "Qualquer valor acima do mínimo, o resto depois.",
+      "ru-RU": "Любая сумма выше минимума, остаток позже."
+    },
+    "Availability": {
+      "fr-FR": "Disponibilité",
+      "es-ES": "Disponibilidad",
+      "it-IT": "Disponibilità",
+      "pl-PL": "Dostępność",
+      "de-DE": "Verfügbarkeit",
+      "cs-CZ": "Dostupnost",
+      "nl-NL": "Beschikbaarheid",
+      "pt-PT": "Disponibilidade",
+      "ru-RU": "Доступность"
+    },
+    "Optional": {
+      "fr-FR": "Facultatif",
+      "es-ES": "Opcional",
+      "it-IT": "Facoltativo",
+      "pl-PL": "Opcjonalnie",
+      "de-DE": "Optional",
+      "cs-CZ": "Volitelné",
+      "nl-NL": "Optioneel",
+      "pt-PT": "Opcional",
+      "ru-RU": "Необязательно"
+    },
+    "Shows a countdown on the product page.": {
+      "fr-FR": "Affiche un compte à rebours sur la fiche produit.",
+      "es-ES": "Muestra una cuenta atrás en la página del producto.",
+      "it-IT": "Mostra un conto alla rovescia nella pagina prodotto.",
+      "pl-PL": "Pokazuje odliczanie na stronie produktu.",
+      "de-DE": "Zeigt einen Countdown auf der Produktseite.",
+      "cs-CZ": "Zobrazí odpočet na stránce produktu.",
+      "nl-NL": "Toont een aftelling op de productpagina.",
+      "pt-PT": "Mostra uma contagem na página do produto.",
+      "ru-RU": "Показывает отсчёт на странице товара."
+    },
+    "Unit limit": {
+      "fr-FR": "Limite d'unités",
+      "es-ES": "Límite de unidades",
+      "it-IT": "Limite di unità",
+      "pl-PL": "Limit sztuk",
+      "de-DE": "Stücklimit",
+      "cs-CZ": "Limit kusů",
+      "nl-NL": "Limiet aantal",
+      "pt-PT": "Limite de unidades",
+      "ru-RU": "Лимит штук"
+    },
+    "Stops pre-orders after this many units. 0 means no limit.": {
+      "fr-FR": "Arrête les précommandes après ce nombre d'unités. 0 = sans limite.",
+      "es-ES": "Detiene las reservas tras estas unidades. 0 = sin límite.",
+      "it-IT": "Ferma i preordini dopo queste unità. 0 = nessun limite.",
+      "pl-PL": "Kończy przedsprzedaż po tylu sztukach. 0 = bez limitu.",
+      "de-DE": "Stoppt Vorbestellungen nach dieser Stückzahl. 0 = unbegrenzt.",
+      "cs-CZ": "Zastaví předobjednávky po tomto počtu. 0 = bez omezení.",
+      "nl-NL": "Stopt pre-orders na dit aantal. 0 = onbeperkt.",
+      "pt-PT": "Para as pré-encomendas após estas unidades. 0 = sem limite.",
+      "ru-RU": "Останавливает предзаказы после этого количества. 0 = без лимита."
+    },
+    "Who can pre-order": {
+      "fr-FR": "Qui peut précommander",
+      "es-ES": "Quién puede reservar",
+      "it-IT": "Chi può preordinare",
+      "pl-PL": "Kto może zamawiać",
+      "de-DE": "Wer vorbestellen darf",
+      "cs-CZ": "Kdo může předobjednat",
+      "nl-NL": "Wie kan pre-orderen",
+      "pt-PT": "Quem pode pré-encomendar",
+      "ru-RU": "Кто может оформить предзаказ"
+    },
+    "Everyone": {
+      "fr-FR": "Tout le monde",
+      "es-ES": "Todos",
+      "it-IT": "Tutti",
+      "pl-PL": "Wszyscy",
+      "de-DE": "Alle",
+      "cs-CZ": "Všichni",
+      "nl-NL": "Iedereen",
+      "pt-PT": "Todos",
+      "ru-RU": "Все"
+    },
+    "Only selected": {
+      "fr-FR": "Sélection uniquement",
+      "es-ES": "Solo seleccionados",
+      "it-IT": "Solo selezionati",
+      "pl-PL": "Tylko wybrani",
+      "de-DE": "Nur Auswahl",
+      "cs-CZ": "Jen vybraní",
+      "nl-NL": "Alleen selectie",
+      "pt-PT": "Só selecionados",
+      "ru-RU": "Только выбранные"
+    },
+    "Customer groups": {
+      "fr-FR": "Groupes de clients",
+      "es-ES": "Grupos de clientes",
+      "it-IT": "Gruppi di clienti",
+      "pl-PL": "Grupy klientów",
+      "de-DE": "Kundengruppen",
+      "cs-CZ": "Skupiny zákazníků",
+      "nl-NL": "Klantgroepen",
+      "pt-PT": "Grupos de clientes",
+      "ru-RU": "Группы клиентов"
+    },
+    "Countries": {
+      "fr-FR": "Pays",
+      "es-ES": "Países",
+      "it-IT": "Paesi",
+      "pl-PL": "Kraje",
+      "de-DE": "Länder",
+      "cs-CZ": "Země",
+      "nl-NL": "Landen",
+      "pt-PT": "Países",
+      "ru-RU": "Страны"
+    },
+    "Search countries": {
+      "fr-FR": "Chercher un pays",
+      "es-ES": "Buscar países",
+      "it-IT": "Cerca paesi",
+      "pl-PL": "Szukaj krajów",
+      "de-DE": "Länder suchen",
+      "cs-CZ": "Hledat země",
+      "nl-NL": "Landen zoeken",
+      "pt-PT": "Procurar países",
+      "ru-RU": "Поиск стран"
+    },
+    "Nothing ticked in a list means no limit on it.": {
+      "fr-FR": "Rien de coché dans une liste = pas de limite sur celle-ci.",
+      "es-ES": "Nada marcado en una lista significa sin límite en ella.",
+      "it-IT": "Nessuna spunta in un elenco significa nessun limite.",
+      "pl-PL": "Brak zaznaczeń na liście oznacza brak limitu.",
+      "de-DE": "Nichts angekreuzt bedeutet keine Einschränkung.",
+      "cs-CZ": "Nic nezaškrtnuto v seznamu znamená bez omezení.",
+      "nl-NL": "Niets aangevinkt betekent geen beperking.",
+      "pt-PT": "Nada marcado numa lista significa sem limite.",
+      "ru-RU": "Если в списке ничего не отмечено, ограничения нет."
+    },
+    "Preview on the product page": {
+      "fr-FR": "Aperçu sur la fiche produit",
+      "es-ES": "Vista previa en la página del producto",
+      "it-IT": "Anteprima nella pagina prodotto",
+      "pl-PL": "Podgląd na stronie produktu",
+      "de-DE": "Vorschau auf der Produktseite",
+      "cs-CZ": "Náhled na stránce produktu",
+      "nl-NL": "Voorbeeld op de productpagina",
+      "pt-PT": "Pré-visualização na página do produto",
+      "ru-RU": "Предпросмотр на странице товара"
+    },
+    "Back to products": {
+      "fr-FR": "Retour aux produits",
+      "es-ES": "Volver a productos",
+      "it-IT": "Torna ai prodotti",
+      "pl-PL": "Wróć do produktów",
+      "de-DE": "Zurück zu den Produkten",
+      "cs-CZ": "Zpět na produkty",
+      "nl-NL": "Terug naar producten",
+      "pt-PT": "Voltar aos produtos",
+      "ru-RU": "Назад к товарам"
+    },
+    "Cancel": {
+      "fr-FR": "Annuler",
+      "es-ES": "Cancelar",
+      "it-IT": "Annulla",
+      "pl-PL": "Anuluj",
+      "de-DE": "Abbrechen",
+      "cs-CZ": "Zrušit",
+      "nl-NL": "Annuleren",
+      "pt-PT": "Cancelar",
+      "ru-RU": "Отмена"
     }
   },
   "Shop": {
