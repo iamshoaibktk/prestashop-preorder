@@ -378,6 +378,86 @@
         <source>Cancel</source>
         <target>Annuler</target>
       </trans-unit>
+      <trans-unit id="1afa74da05ca145d3418aad9af510109">
+        <source>Design</source>
+        <target>Design</target>
+      </trans-unit>
+      <trans-unit id="9789fd7312d68263d0089a1389b6b574">
+        <source>Product page design</source>
+        <target>Design de la fiche produit</target>
+      </trans-unit>
+      <trans-unit id="e9e6e7fa45574bef7d0ff9ce2aa74368">
+        <source>Choose how the pre-order box looks in your store.</source>
+        <target>Choisissez l'apparence du bloc de précommande dans votre boutique.</target>
+      </trans-unit>
+      <trans-unit id="fc577feffc979207532df1b340f3c433">
+        <source>Design saved.</source>
+        <target>Design enregistré.</target>
+      </trans-unit>
+      <trans-unit id="1d565b9e5303987bb1b1938d5d458bca">
+        <source>Card</source>
+        <target>Carte</target>
+      </trans-unit>
+      <trans-unit id="30fc6bbba82125243ecf4ddb27fee645">
+        <source>Minimal</source>
+        <target>Minimal</target>
+      </trans-unit>
+      <trans-unit id="715892aeae38d12aa79f585b4861e968">
+        <source>Spotlight</source>
+        <target>Projecteur</target>
+      </trans-unit>
+      <trans-unit id="ddc35f88fa71b6ef142ae61f35364653">
+        <source>Bar</source>
+        <target>Barre</target>
+      </trans-unit>
+      <trans-unit id="02dd62c06b2c1f1b418755b4eb315d29">
+        <source>Warm and friendly, with a clear countdown.</source>
+        <target>Chaleureux et convivial, avec un compte à rebours clair.</target>
+      </trans-unit>
+      <trans-unit id="33cdc57c744115096104bb1a47a3c792">
+        <source>Clean and quiet, for modern themes.</source>
+        <target>Sobre et discret, pour les thèmes modernes.</target>
+      </trans-unit>
+      <trans-unit id="ffcf8c43af969caacd65d7bffe61d1c0">
+        <source>Dark and bold, made to stand out.</source>
+        <target>Sombre et affirmé, fait pour se démarquer.</target>
+      </trans-unit>
+      <trans-unit id="6cfbddd291692d37d2c55c409adb0b8b">
+        <source>One slim line, for tight pages.</source>
+        <target>Une ligne fine, pour les pages chargées.</target>
+      </trans-unit>
+      <trans-unit id="fb13b06128391d01035d684dfb9b511b">
+        <source>In use</source>
+        <target>Utilisé</target>
+      </trans-unit>
+      <trans-unit id="4fe5171e0ba117424ec71384098df110">
+        <source>Use this design</source>
+        <target>Utiliser ce design</target>
+      </trans-unit>
+      <trans-unit id="6c89d34e72b57d009141ea4f8b238cda">
+        <source>No date</source>
+        <target>Sans date</target>
+      </trans-unit>
+      <trans-unit id="2badfa8fae80a36f4e2d4ee833e26d8c">
+        <source>Pick a date</source>
+        <target>Choisir une date</target>
+      </trans-unit>
+      <trans-unit id="31092a4cf85b77f80fdc80611ba82370">
+        <source>Previous month</source>
+        <target>Mois précédent</target>
+      </trans-unit>
+      <trans-unit id="d0b3a5fdac851b5d097b9afd3af92688">
+        <source>Next month</source>
+        <target>Mois suivant</target>
+      </trans-unit>
+      <trans-unit id="a76d4ef5f3f6a672bbfab2865563e530">
+        <source>Time</source>
+        <target>Heure</target>
+      </trans-unit>
+      <trans-unit id="088213f9659756a3f269818e87b02150">
+        <source>The countdown has ended.</source>
+        <target>Le compte à rebours est terminé.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

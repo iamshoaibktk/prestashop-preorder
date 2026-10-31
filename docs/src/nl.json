@@ -39,6 +39,9 @@
    "content": [
     {
      "p": "De productpagina toont de knop, de aftelling en het te betalen bedrag. Pre-order- en gewone producten worden apart besteld."
+    },
+    {
+     "p": "Het tabblad **Ontwerp** biedt vier stijlen voor het vak op de productpagina: Kaart, Minimaal, Spotlight en Balk."
     }
    ]
   },

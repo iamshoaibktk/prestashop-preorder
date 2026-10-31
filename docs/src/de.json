@@ -39,6 +39,9 @@
    "content": [
     {
      "p": "Die Produktseite zeigt Button, Countdown und den fälligen Betrag. Vorbestell- und normale Produkte werden getrennt bestellt."
+    },
+    {
+     "p": "Der Reiter **Design** bietet vier Stile für die Box auf der Produktseite: Karte, Minimal, Spotlight und Leiste."
     }
    ]
   },

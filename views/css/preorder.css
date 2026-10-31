@@ -1,10 +1,49 @@
-/* @author iamshoaibktk@gmail.com | AFL-3.0 */
-.po-box { margin: 16px 0; padding: 16px; border: 1px solid #fbd5c4; border-radius: 10px; background: #fff7f3; }
+/**
+ * Storefront pre-order box. The same markup in four designs, chosen in the back office.
+ *
+ * @author    iamshoaibktk@gmail.com (WhatsApp: +923459016286)
+ * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
+ */
+.po-box { margin: 16px 0; font-size: 14px; line-height: 1.45; text-align: left; }
 .po-box p { margin: 6px 0; }
-.po-title { font-weight: 700; color: #c2410c; text-transform: uppercase; font-size: 13px; letter-spacing: .05em; }
-.po-count { display: flex; gap: 8px; margin: 10px 0; }
-.po-count span { flex: 1; max-width: 72px; padding: 8px 4px; text-align: center; background: #fff; border: 1px solid #fbd5c4; border-radius: 8px; font-size: 11px; color: #6b7280; }
-.po-count b { display: block; font-size: 22px; color: #111827; font-variant-numeric: tabular-nums; }
-.po-amount { display: block; margin: 8px 0; font-weight: 600; }
-.po-amount input { max-width: 160px; margin-top: 6px; }
-.po-refused { color: #b91c1c; font-weight: 600; }
+.po-box .po-title { font-size: 13px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.po-box .po-count { display: flex; gap: 8px; margin: 10px 0; }
+.po-box .po-count b { display: block; font-variant-numeric: tabular-nums; }
+.po-box .po-amount { display: block; margin: 8px 0; font-weight: 600; }
+.po-box .po-amount input { display: block; max-width: 160px; margin-top: 6px; }
+.po-box .po-refused { font-weight: 600; }
+
+/* Card: warm and friendly */
+.po-style-card { padding: 16px; border: 1px solid #fbd5c4; border-radius: 10px; background: #fff7f3; color: #111827; }
+.po-style-card .po-title { color: #c2410c; }
+.po-style-card .po-count span { flex: 1; max-width: 72px; padding: 8px 4px; border: 1px solid #fbd5c4; border-radius: 8px; background: #fff; color: #6b7280; font-size: 11px; text-align: center; }
+.po-style-card .po-count b { color: #111827; font-size: 22px; }
+.po-style-card .po-refused { color: #b91c1c; }
+
+/* Minimal: clean and quiet */
+.po-style-minimal { padding: 2px 0 2px 16px; border-left: 3px solid #111827; color: #374151; }
+.po-style-minimal .po-title { color: #111827; }
+.po-style-minimal .po-count { gap: 14px; margin: 8px 0; }
+.po-style-minimal .po-count span { display: inline-flex; align-items: baseline; gap: 3px; color: #6b7280; font-size: 12px; }
+.po-style-minimal .po-count b { color: #111827; font-size: 18px; font-weight: 600; }
+.po-style-minimal .po-refused { color: #b91c1c; }
+
+/* Spotlight: dark and bold */
+.po-style-spotlight { padding: 20px; border-radius: 14px; background: linear-gradient(135deg, #111827, #312e81); box-shadow: 0 12px 28px rgba(17, 24, 39, .25); color: #e5e7eb; }
+.po-style-spotlight .po-title { display: flex; align-items: center; gap: 8px; color: #fff; }
+.po-style-spotlight .po-title::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: #fbbf24; box-shadow: 0 0 0 4px rgba(251, 191, 36, .25); }
+.po-style-spotlight .po-count span { flex: 1; max-width: 84px; padding: 10px 4px; border-radius: 10px; background: rgba(255, 255, 255, .1); color: #c7d2fe; font-size: 11px; text-align: center; }
+.po-style-spotlight .po-count b { color: #fff; font-size: 28px; font-weight: 700; line-height: 1.1; }
+.po-style-spotlight .po-amount input { color: #111827; }
+.po-style-spotlight .po-refused { color: #fecaca; }
+
+/* Bar: one slim line */
+.po-style-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; padding: 10px 14px; border: 1px solid #bfdbfe; border-radius: 8px; background: #eff6ff; color: #1e3a8a; }
+.po-style-bar p { margin: 0; }
+.po-style-bar .po-title { padding: 2px 10px; border-radius: 999px; background: #2563eb; color: #fff; font-size: 11px; }
+.po-style-bar .po-date { font-weight: 600; }
+.po-style-bar .po-count { gap: 8px; margin: 0; }
+.po-style-bar .po-count span { display: inline-flex; align-items: baseline; gap: 2px; font-size: 11px; }
+.po-style-bar .po-count b { font-size: 15px; font-weight: 700; }
+.po-style-bar .po-amount { flex-basis: 100%; }
+.po-style-bar .po-refused { color: #b91c1c; }

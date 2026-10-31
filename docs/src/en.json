@@ -39,6 +39,9 @@
    "content": [
     {
      "p": "The product page shows the Pre-order button, a countdown and what is due now. Pre-order and regular products must be ordered separately."
+    },
+    {
+     "p": "The **Design** tab offers four looks for the product page box: Card, Minimal, Spotlight and Bar."
     }
    ]
   },

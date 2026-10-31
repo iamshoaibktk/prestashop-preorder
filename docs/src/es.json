@@ -39,6 +39,9 @@
    "content": [
     {
      "p": "La página del producto muestra el botón, la cuenta atrás y lo que se paga ahora. Las reservas y los productos normales se piden por separado."
+    },
+    {
+     "p": "La pestaña **Diseño** ofrece cuatro estilos para el bloque de la página de producto: Tarjeta, Minimal, Destacado y Barra."
     }
    ]
   },

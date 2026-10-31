@@ -39,6 +39,9 @@
    "content": [
     {
      "p": "Strona produktu pokazuje przycisk, odliczanie i kwotę do zapłaty. Przedsprzedaż i zwykłe produkty zamawia się osobno."
+    },
+    {
+     "p": "Karta **Wygląd** oferuje cztery style pola na stronie produktu: Karta, Minimalny, Wyróżniony i Pasek."
     }
    ]
   },

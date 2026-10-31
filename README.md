@@ -6,6 +6,8 @@ Turn sold-out product pages into sales on PrestaShop 9, using the normal checkou
 
 - **Full payment, deposit (percent or fixed) or customer-chosen amount** above a minimum, guests included
 - **Countdown** and the amount due on the product page
+- **Four product page designs** to choose from: Card, Minimal, Spotlight and Bar
+- **Back office overview**: units, value, collected and balance to collect, with an editor and live preview
 - **Automatic email when stock arrives**, with a secure link to pay the balance (free shipping, stock not reduced twice)
 - Limit by **customer group, country and number of units**
 - Pre-order and regular products **ordered separately**

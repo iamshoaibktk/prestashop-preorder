@@ -39,6 +39,9 @@
    "content": [
     {
      "p": "La fiche produit affiche le bouton, le compte à rebours et le montant dû. Les précommandes et les produits normaux se commandent séparément."
+    },
+    {
+     "p": "L'onglet **Design** propose quatre apparences pour le bloc de la fiche produit : Carte, Minimal, Projecteur et Barre."
     }
    ]
   },

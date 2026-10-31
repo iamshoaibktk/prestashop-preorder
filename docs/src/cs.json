@@ -39,6 +39,9 @@
    "content": [
     {
      "p": "Stránka produktu ukazuje tlačítko, odpočet a částku k úhradě. Předobjednávky a běžné produkty se objednávají zvlášť."
+    },
+    {
+     "p": "Karta **Vzhled** nabízí čtyři styly pole na stránce produktu: Karta, Minimální, Výrazný a Lišta."
     }
    ]
   },

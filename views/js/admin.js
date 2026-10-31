@@ -64,13 +64,16 @@
   function open(rule) {
     $('po-editor-title').textContent = rule ? t.tEdit : t.tNew;
     $('po-editor').reset();
+    setDate('');
+    $('po-cal').hidden = true;
+    $('po-cal-toggle').setAttribute('aria-expanded', 'false');
     pick(rule || null);
     $('po-change').hidden = !!rule; // a rule belongs to its product
     if (rule) {
       setRadio('po_mode', rule.mode);
       setRadio('po_amount_type', rule.amount_type);
       $('po-amount').value = rule.amount || 20;
-      $('po-date').value = rule.date;
+      setDate(rule.date);
       $('po-max').value = rule.max;
       var restricted = rule.groups.length || rule.countries.length;
       setRadio('po_who', restricted ? 'some' : 'all');
@@ -208,18 +211,134 @@
     $('po-pv-text').textContent = text;
     tick();
   }
+  /** The date is typed in the shop's time zone, whatever zone this browser is in. */
+  function shopTime(v) {
+    var m = /^(\d+)-(\d+)-(\d+)T(\d+):(\d+)/.exec(v);
+    return m ? Date.UTC(+m[1], m[2] - 1, +m[3], +m[4], +m[5]) - (+t.tz || 0) * 1000 : 0;
+  }
   function tick() {
-    var v = $('po-date').value;
-    var ts = v ? new Date(v).getTime() : 0;
+    var ts = shopTime($('po-date').value);
     var future = ts > Date.now();
     $('po-pv-date').hidden = !future;
     $('po-pv-count').hidden = !future;
     if (!future) { return; }
-    $('po-pv-date').textContent = t.pDate.replace('%date%', new Date(ts).toLocaleDateString(t.locale));
+    $('po-pv-date').textContent = t.pDate.replace('%date%', fmt({dateStyle: 'medium'}).format(wall($('po-date').value)));
     var left = (ts - Date.now()) / 1000;
     var u = {d: Math.floor(left / 86400), h: Math.floor(left % 86400 / 3600), m: Math.floor(left % 3600 / 60), s: Math.floor(left % 60)};
     Object.keys(u).forEach(function (k) { $('po-pv-count').querySelector('[data-u="' + k + '"]').textContent = u[k]; });
   }
+
+  /* ---------- date picker: quick choices, a simple calendar, one optional time ---------- */
+  var DEFAULT_TIME = '09:00';
+  var calMonth = null;
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  var fmt = function (o) { return new Intl.DateTimeFormat(t.locale, Object.assign({timeZone: 'UTC'}, o)); };
+  var wall = function (v) { var m = /^(\d+)-(\d+)-(\d+)/.exec(v); return new Date(Date.UTC(+m[1], m[2] - 1, +m[3])); };
+  var key = function (d) { return d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate()); };
+  function shopToday() { var d = new Date(Date.now() + (+t.tz || 0) * 1000); return new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate())); }
+  function addDays(n) { return new Date(shopToday().getTime() + n * 86400000); }
+  function weekStart() {
+    try { var w = new Intl.Locale(t.locale); var i = (w.getWeekInfo ? w.getWeekInfo() : w.weekInfo); if (i) { return i.firstDay % 7; } } catch (e) { /* older browser */ }
+    return /^en-US/.test(t.locale) ? 0 : 1;
+  }
+  function currentTime() { return $('po-date').value.split('T')[1] || DEFAULT_TIME; }
+  function setDate(v) {
+    $('po-date').value = v;
+    var day = v.split('T')[0];
+    all('.po-chip[data-days]').forEach(function (c) {
+      var on = c.dataset.days === '' ? !v : key(addDays(+c.dataset.days)) === day;
+      c.classList.toggle('is-on', on);
+      c.setAttribute('aria-pressed', String(on));
+    });
+    $('po-date-summary').hidden = !v;
+    if (v) {
+      var time = currentTime();
+      var sel = $('po-time');
+      if (!sel.querySelector('option[value="' + time + '"]')) {
+        var extra = document.createElement('option');
+        extra.value = extra.textContent = time;
+        sel.appendChild(extra);
+      }
+      sel.value = time;
+      var ts = shopTime(v);
+      var days = Math.round((wall(v).getTime() - shopToday().getTime()) / 86400000);
+      var rel = '';
+      try { rel = new Intl.RelativeTimeFormat(t.locale, {numeric: 'auto'}).format(days, 'day'); } catch (e) { /* older browser */ }
+      $('po-date-text').textContent = fmt({dateStyle: 'full'}).format(wall(v)) + (ts > Date.now() ? (rel ? ' · ' + rel : '') : ' · ' + t.tEnded);
+      calMonth = new Date(Date.UTC(wall(v).getUTCFullYear(), wall(v).getUTCMonth(), 1));
+    }
+    if (!$('po-cal').hidden) { drawCalendar(); }
+    preview();
+  }
+  function drawCalendar() {
+    if (!calMonth) { var n = shopToday(); calMonth = new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), 1)); }
+    $('po-cal-title').textContent = fmt({month: 'long', year: 'numeric'}).format(calMonth);
+    var grid = $('po-cal-grid');
+    grid.innerHTML = '';
+    var first = weekStart();
+    for (var w = 0; w < 7; w++) {
+      var head = document.createElement('span');
+      head.className = 'po-cal-dow';
+      head.textContent = fmt({weekday: 'short'}).format(new Date(Date.UTC(2023, 0, 1 + first + w)));
+      grid.appendChild(head);
+    }
+    var y = calMonth.getUTCFullYear(), m = calMonth.getUTCMonth();
+    var blanks = (new Date(Date.UTC(y, m, 1)).getUTCDay() - first + 7) % 7;
+    for (var b = 0; b < blanks; b++) { grid.appendChild(document.createElement('span')); }
+    var today = key(shopToday());
+    var chosen = $('po-date').value.split('T')[0];
+    var count = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();
+    for (var d = 1; d <= count; d++) {
+      (function (d) {
+        var date = new Date(Date.UTC(y, m, d));
+        var k = key(date);
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = d;
+        btn.className = 'po-cal-day' + (k === chosen ? ' is-on' : '') + (k === today ? ' is-today' : '');
+        btn.setAttribute('aria-label', fmt({dateStyle: 'full'}).format(date));
+        btn.setAttribute('aria-pressed', String(k === chosen));
+        btn.disabled = k < today;
+        btn.addEventListener('click', function () { setDate(k + 'T' + currentTime()); });
+        grid.appendChild(btn);
+      })(d);
+    }
+    var now = shopToday();
+    $('po-cal-prev').disabled = y === now.getUTCFullYear() && m === now.getUTCMonth();
+  }
+  for (var h = 0; h < 24; h++) {
+    [':00', ':30'].forEach(function (mm) {
+      var o = document.createElement('option');
+      o.value = o.textContent = pad(h) + mm;
+      $('po-time').appendChild(o);
+    });
+  }
+  all('.po-chip[data-rel]').forEach(function (c) {
+    var r = c.dataset.rel.split(',');
+    var text = c.dataset.days + ' d';
+    try { text = new Intl.RelativeTimeFormat(t.locale, {numeric: 'always'}).format(+r[0], r[1]); } catch (e) { /* older browser */ }
+    c.textContent = text.charAt(0).toUpperCase() + text.slice(1);
+  });
+  all('.po-chip[data-days]').forEach(function (c) {
+    c.addEventListener('click', function () {
+      setDate(c.dataset.days === '' ? '' : key(addDays(+c.dataset.days)) + 'T' + currentTime());
+    });
+  });
+  $('po-cal-toggle').addEventListener('click', function () {
+    var cal = $('po-cal');
+    cal.hidden = !cal.hidden;
+    this.setAttribute('aria-expanded', String(!cal.hidden));
+    if (!cal.hidden) { drawCalendar(); }
+  });
+  ['prev', 'next'].forEach(function (dir) {
+    $('po-cal-' + dir).addEventListener('click', function () {
+      calMonth = new Date(Date.UTC(calMonth.getUTCFullYear(), calMonth.getUTCMonth() + (dir === 'next' ? 1 : -1), 1));
+      drawCalendar();
+    });
+  });
+  $('po-time').addEventListener('change', function () {
+    setDate($('po-date').value.split('T')[0] + 'T' + this.value);
+  });
   setInterval(function () { if (!$('po-editor').hidden) { tick(); } }, 1000);
 
   /* ---------- row actions: real POSTs, confirmed first ---------- */

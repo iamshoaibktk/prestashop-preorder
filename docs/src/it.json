@@ -39,6 +39,9 @@
    "content": [
     {
      "p": "La pagina prodotto mostra il pulsante, il conto alla rovescia e l'importo dovuto. Preordini e prodotti normali si ordinano separatamente."
+    },
+    {
+     "p": "La scheda **Design** offre quattro stili per il riquadro della pagina prodotto: Scheda, Minimale, In evidenza e Barra."
     }
    ]
   },

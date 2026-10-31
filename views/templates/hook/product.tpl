@@ -2,7 +2,7 @@
  * @author    iamshoaibktk@gmail.com (WhatsApp: +923459016286)
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-<div class="po-box" data-po="1" data-label="{l s='Pre-order now' d='Modules.Preorder.Shop'}" data-refused="{if $po_refusal}1{else}0{/if}" data-ts="{$po_ts|intval}" data-url="{$po_url|escape:'html':'UTF-8'}" data-id="{$po_id|intval}">
+<div class="po-box po-style-{$po_style|escape:'html':'UTF-8'}" data-po="1" data-label="{l s='Pre-order now' d='Modules.Preorder.Shop'}" data-refused="{if $po_refusal}1{else}0{/if}" data-ts="{$po_ts|intval}" data-url="{$po_url|escape:'html':'UTF-8'}" data-id="{$po_id|intval}">
   <div class="po-title">{l s='Pre-order' d='Modules.Preorder.Shop'}</div>
   {if $po_refusal}
     <p class="po-refused">{$po_refusal|escape:'html':'UTF-8'}</p>

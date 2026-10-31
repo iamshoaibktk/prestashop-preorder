@@ -18,6 +18,8 @@ class Preorder extends Module
 {
     public const D = 'Modules.Preorder.Admin';
     public const S = 'Modules.Preorder.Shop';
+    public const STYLE = 'PREORDER_STYLE';
+    public const STYLES = ['card', 'minimal', 'spotlight', 'bar'];
     private const LANG_LOCALES = ['en' => 'en-US', 'fr' => 'fr-FR', 'es' => 'es-ES', 'it' => 'it-IT', 'pl' => 'pl-PL', 'de' => 'de-DE', 'cs' => 'cs-CZ', 'nl' => 'nl-NL', 'pt' => 'pt-PT', 'ru' => 'ru-RU'];
 
     /** Our own stock corrections must not count as stock arriving. */
@@ -27,7 +29,7 @@ class Preorder extends Module
     {
         $this->name = 'preorder';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.1';
+        $this->version = '1.0.2';
         $this->author = 'iamshoaibktk@gmail.com';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = ['min' => '9.0.0', 'max' => _PS_VERSION_];
@@ -93,7 +95,16 @@ class Preorder extends Module
             Db::getInstance()->execute('DROP TABLE IF EXISTS ' . _DB_PREFIX_ . $t);
         }
 
+        Configuration::deleteByName(self::STYLE);
+
         return parent::uninstall();
+    }
+
+    public function style(): string
+    {
+        $style = (string) Configuration::get(self::STYLE);
+
+        return in_array($style, self::STYLES, true) ? $style : self::STYLES[0];
     }
 
     // ------------------------------------------------------------------ rules
@@ -505,6 +516,7 @@ class Preorder extends Module
         $iso = $this->context->currency->iso_code;
         $date = $rule['available_date'] && strtotime($rule['available_date']) > time() ? $rule['available_date'] : null;
         $this->context->smarty->assign([
+            'po_style' => $this->style(),
             'po_mode' => $rule['mode'],
             'po_refusal' => $refusal,
             'po_ts' => $date ? strtotime($date) : 0,
@@ -629,6 +641,10 @@ class Preorder extends Module
         if (Tools::isSubmit('po_save')) {
             $out .= $this->saveRule();
         }
+        if (in_array(Tools::getValue('po_style'), self::STYLES, true)) {
+            Configuration::updateValue(self::STYLE, Tools::getValue('po_style'));
+            $out .= $this->displayConfirmation($this->trans('Design saved.', [], self::D));
+        }
         if ($id = (int) Tools::getValue('po_delete')) {
             $r = $db->getRow('SELECT * FROM ' . _DB_PREFIX_ . 'preorder_rule WHERE id_product = ' . $id);
             if ($r) {
@@ -697,6 +713,18 @@ class Preorder extends Module
             'po_css' => $this->_path . 'views/css/admin.css?v=' . filemtime(__DIR__ . '/views/css/admin.css'),
             'po_js' => $this->_path . 'views/js/admin.js?v=' . filemtime(__DIR__ . '/views/js/admin.js'),
             'po_flash' => $out,
+            'po_style' => $this->style(),
+            'po_styles' => [
+                ['id' => 'card', 'name' => $this->trans('Card', [], self::D), 'text' => $this->trans('Warm and friendly, with a clear countdown.', [], self::D)],
+                ['id' => 'minimal', 'name' => $this->trans('Minimal', [], self::D), 'text' => $this->trans('Clean and quiet, for modern themes.', [], self::D)],
+                ['id' => 'spotlight', 'name' => $this->trans('Spotlight', [], self::D), 'text' => $this->trans('Dark and bold, made to stand out.', [], self::D)],
+                ['id' => 'bar', 'name' => $this->trans('Bar', [], self::D), 'text' => $this->trans('One slim line, for tight pages.', [], self::D)],
+            ],
+            'po_sample_date' => Tools::displayDate(date('Y-m-d', time() + 12 * 86400)),
+            'po_sample_now' => $money(20),
+            'po_sample_later' => $money(80),
+            'po_tz' => (int) date('Z'),
+            'po_front_css' => $this->_path . 'views/css/preorder.css?v=' . filemtime(__DIR__ . '/views/css/preorder.css'),
         ]);
 
         return $this->display(__FILE__, 'views/templates/admin/author.tpl') . $this->display(__FILE__, 'views/templates/admin/config.tpl');

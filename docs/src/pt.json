@@ -39,6 +39,9 @@
    "content": [
     {
      "p": "A página do produto mostra o botão, a contagem e o valor a pagar. Pré-encomendas e produtos normais são encomendados em separado."
+    },
+    {
+     "p": "O separador **Design** oferece quatro estilos para a caixa da página do produto: Cartão, Minimal, Destaque e Barra."
     }
    ]
   },

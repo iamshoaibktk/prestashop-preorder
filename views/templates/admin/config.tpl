@@ -2,9 +2,10 @@
  * @author    iamshoaibktk@gmail.com (WhatsApp: +923459016286)
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
+<link rel="stylesheet" href="{$po_front_css|escape:'html':'UTF-8'}">
 <link rel="stylesheet" href="{$po_css|escape:'html':'UTF-8'}">
 <div id="po-app"
-  data-base="{$po_base|escape:'html':'UTF-8'}" data-iso="{$po_iso|escape:'html':'UTF-8'}" data-locale="{$po_locale|escape:'html':'UTF-8'}"
+  data-base="{$po_base|escape:'html':'UTF-8'}" data-iso="{$po_iso|escape:'html':'UTF-8'}" data-locale="{$po_locale|escape:'html':'UTF-8'}" data-tz="{$po_tz|intval}"
   data-rules="{$po_rules_json|escape:'html':'UTF-8'}"
   data-t-new="{l s='New pre-order product' d='Modules.Preorder.Admin'}"
   data-t-edit="{l s='Edit pre-order product' d='Modules.Preorder.Admin'}"
@@ -18,6 +19,7 @@
   data-p-full="{l s='Pay %amount% now. We ship as soon as it arrives.' d='Modules.Preorder.Shop'}"
   data-p-partial="{l s='Pay %amount% now and %later% when it arrives.' d='Modules.Preorder.Shop'}"
   data-p-dynamic="{l s='Choose how much to pay now (minimum %amount%, per unit)' d='Modules.Preorder.Shop'}"
+  data-t-ended="{l s='The countdown has ended.' d='Modules.Preorder.Admin'}"
   data-p-date="{l s='Available on %date%' d='Modules.Preorder.Shop'}">
 
   {$po_flash nofilter}
@@ -42,9 +44,10 @@
   {* ---------- lists ---------- *}
   <div id="po-lists">
     <div class="po-tabs" role="tablist">
-      <button type="button" role="tab" class="po-tab" data-tab="products" aria-selected="true">{l s='Products' d='Modules.Preorder.Admin'}<span class="po-count">{$po_rules|count}</span></button>
-      <button type="button" role="tab" class="po-tab" data-tab="orders" aria-selected="false">{l s='Pre-orders' d='Modules.Preorder.Admin'}<span class="po-count">{$po_orders|count}</span></button>
+      <button type="button" role="tab" class="po-tab" data-tab="products" aria-selected="true">{l s='Products' d='Modules.Preorder.Admin'}<span class="po-tab-count">{$po_rules|count}</span></button>
+      <button type="button" role="tab" class="po-tab" data-tab="orders" aria-selected="false">{l s='Pre-orders' d='Modules.Preorder.Admin'}<span class="po-tab-count">{$po_orders|count}</span></button>
       <button type="button" role="tab" class="po-tab" data-tab="demand" aria-selected="false">{l s='Demand' d='Modules.Preorder.Admin'}</button>
+      <button type="button" role="tab" class="po-tab" data-tab="design" aria-selected="false">{l s='Design' d='Modules.Preorder.Admin'}</button>
       <button type="button" class="po-btn po-btn-primary po-add" data-new><i class="material-icons">add</i>{l s='Add product' d='Modules.Preorder.Admin'}</button>
     </div>
 
@@ -107,6 +110,31 @@
       <div class="po-empty"><i class="material-icons">insights</i><h3>{l s='No demand data yet.' d='Modules.Preorder.Admin'}</h3><p>{l s='See which products customers want most once pre-orders come in.' d='Modules.Preorder.Admin'}</p></div>
       {/if}
     </div>
+    <div data-panel="design" role="tabpanel" hidden>
+      <p class="po-panel-intro"><strong>{l s='Product page design' d='Modules.Preorder.Admin'}</strong> {l s='Choose how the pre-order box looks in your store.' d='Modules.Preorder.Admin'}</p>
+      <div class="po-gallery">
+      {foreach $po_styles as $st}
+        <article class="po-card po-design{if $st.id == $po_style} is-on{/if}">
+          <div class="po-design-stage">
+            <div class="po-box po-style-{$st.id|escape:'html':'UTF-8'}">
+              <div class="po-title">{l s='Pre-order' d='Modules.Preorder.Shop'}</div>
+              <p class="po-date">{l s='Available on %date%' sprintf=['%date%' => $po_sample_date] d='Modules.Preorder.Shop'}</p>
+              <div class="po-count"><span><b>12</b>{l s='days' d='Modules.Preorder.Shop'}</span><span><b>5</b>{l s='hours' d='Modules.Preorder.Shop'}</span><span><b>30</b>{l s='min' d='Modules.Preorder.Shop'}</span><span><b>45</b>{l s='sec' d='Modules.Preorder.Shop'}</span></div>
+              <p>{l s='Pay %amount% now and %later% when it arrives.' sprintf=['%amount%' => $po_sample_now, '%later%' => $po_sample_later] d='Modules.Preorder.Shop'}</p>
+            </div>
+          </div>
+          <div class="po-design-foot">
+            <div><strong>{$st.name|escape:'html':'UTF-8'}</strong><small>{$st.text|escape:'html':'UTF-8'}</small></div>
+            {if $st.id == $po_style}
+              <span class="po-pill po-pill-done"><i class="material-icons">check</i>{l s='In use' d='Modules.Preorder.Admin'}</span>
+            {else}
+              <form method="post" action="{$po_base|escape:'html':'UTF-8'}"><input type="hidden" name="po_style" value="{$st.id|escape:'html':'UTF-8'}"><button class="po-btn po-btn-secondary po-btn-sm">{l s='Use this design' d='Modules.Preorder.Admin'}</button></form>
+            {/if}
+          </div>
+        </article>
+      {/foreach}
+      </div>
+    </div>
   </div>
 
   {* ---------- editor ---------- *}
@@ -152,10 +180,32 @@
 
         <section class="po-card po-section">
           <h4>{l s='Availability' d='Modules.Preorder.Admin'}</h4>
-          <div class="po-two">
-            <div class="po-field"><label for="po-date">{l s='Release date' d='Modules.Preorder.Admin'} <small>{l s='Optional' d='Modules.Preorder.Admin'}</small></label><input type="datetime-local" id="po-date" name="po_date"><p class="po-help">{l s='Shows a countdown on the product page.' d='Modules.Preorder.Admin'}</p></div>
-            <div class="po-field"><label for="po-max">{l s='Unit limit' d='Modules.Preorder.Admin'} <small>{l s='Optional' d='Modules.Preorder.Admin'}</small></label><input type="number" min="0" id="po-max" name="po_max" value="0"><p class="po-help">{l s='Stops pre-orders after this many units. 0 means no limit.' d='Modules.Preorder.Admin'}</p></div>
+          <div class="po-field po-field-first">
+            <span class="po-label" id="po-date-label">{l s='Release date' d='Modules.Preorder.Admin'} <small>{l s='Optional' d='Modules.Preorder.Admin'}</small></span>
+            <input type="hidden" id="po-date" name="po_date">
+            <div class="po-chips" role="group" aria-labelledby="po-date-label">
+              <button type="button" class="po-chip" data-days="">{l s='No date' d='Modules.Preorder.Admin'}</button>
+              <button type="button" class="po-chip" data-days="7" data-rel="1,week"></button>
+              <button type="button" class="po-chip" data-days="14" data-rel="2,week"></button>
+              <button type="button" class="po-chip" data-days="30" data-rel="1,month"></button>
+              <button type="button" class="po-chip" data-days="90" data-rel="3,month"></button>
+              <button type="button" class="po-chip" id="po-cal-toggle" aria-expanded="false"><i class="material-icons">calendar_today</i>{l s='Pick a date' d='Modules.Preorder.Admin'}</button>
+            </div>
+            <div id="po-cal" class="po-cal" hidden>
+              <div class="po-cal-head">
+                <button type="button" class="po-icon-btn" id="po-cal-prev" aria-label="{l s='Previous month' d='Modules.Preorder.Admin'}"><i class="material-icons">chevron_left</i></button>
+                <strong id="po-cal-title" aria-live="polite"></strong>
+                <button type="button" class="po-icon-btn" id="po-cal-next" aria-label="{l s='Next month' d='Modules.Preorder.Admin'}"><i class="material-icons">chevron_right</i></button>
+              </div>
+              <div class="po-cal-grid" id="po-cal-grid"></div>
+            </div>
+            <div id="po-date-summary" class="po-date-summary" hidden>
+              <i class="material-icons">event</i><span id="po-date-text"></span>
+              <label class="po-time">{l s='Time' d='Modules.Preorder.Admin'} <select id="po-time"></select></label>
+            </div>
+            <p class="po-help">{l s='Shows a countdown on the product page.' d='Modules.Preorder.Admin'}</p>
           </div>
+          <div class="po-field po-field-limit"><label for="po-max">{l s='Unit limit' d='Modules.Preorder.Admin'} <small>{l s='Optional' d='Modules.Preorder.Admin'}</small></label><input type="number" min="0" id="po-max" name="po_max" value="0"><p class="po-help">{l s='Stops pre-orders after this many units. 0 means no limit.' d='Modules.Preorder.Admin'}</p></div>
         </section>
 
         <section class="po-card po-section">
@@ -176,10 +226,10 @@
         <div class="po-card po-section po-preview">
           <h4>{l s='Preview on the product page' d='Modules.Preorder.Admin'}</h4>
           <div class="po-pv-prod"><img id="po-pv-img" alt="" hidden><div><strong id="po-pv-name">—</strong><span id="po-pv-price"></span></div></div>
-          <div class="po-pv-box">
-            <div class="po-pv-title">{l s='Pre-order' d='Modules.Preorder.Shop'}</div>
-            <p id="po-pv-date" hidden></p>
-            <div id="po-pv-count" class="po-pv-count" hidden><span><b data-u="d">0</b>{l s='days' d='Modules.Preorder.Shop'}</span><span><b data-u="h">0</b>{l s='hours' d='Modules.Preorder.Shop'}</span><span><b data-u="m">0</b>{l s='min' d='Modules.Preorder.Shop'}</span><span><b data-u="s">0</b>{l s='sec' d='Modules.Preorder.Shop'}</span></div>
+          <div class="po-box po-style-{$po_style|escape:'html':'UTF-8'}" id="po-pv-box">
+            <div class="po-title">{l s='Pre-order' d='Modules.Preorder.Shop'}</div>
+            <p class="po-date" id="po-pv-date" hidden></p>
+            <div id="po-pv-count" class="po-count" hidden><span><b data-u="d">0</b>{l s='days' d='Modules.Preorder.Shop'}</span><span><b data-u="h">0</b>{l s='hours' d='Modules.Preorder.Shop'}</span><span><b data-u="m">0</b>{l s='min' d='Modules.Preorder.Shop'}</span><span><b data-u="s">0</b>{l s='sec' d='Modules.Preorder.Shop'}</span></div>
             <p id="po-pv-text"></p>
           </div>
           <div class="po-pv-btn">{l s='Pre-order now' d='Modules.Preorder.Shop'}</div>
