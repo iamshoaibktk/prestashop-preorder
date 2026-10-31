@@ -1,0 +1,70 @@
+{
+ "title": "Pre-Order",
+ "subtitle": "Příručka",
+ "labels": {
+  "version": "Verze",
+  "author": "Autor",
+  "contact": "Kontakt",
+  "page": "Strana",
+  "contents": "Obsah",
+  "compat": "Kompatibilita"
+ },
+ "sections": [
+  {
+   "title": "Přehled",
+   "content": [
+    {
+     "p": "Prodávejte vyprodané nebo dosud nevydané produkty s běžnou pokladnou a jakýmkoli platebním modulem."
+    }
+   ]
+  },
+  {
+   "title": "Nastavení produktu",
+   "content": [
+    {
+     "p": "V **Předobjednávce** vyhledejte produkt, zvolte platbu, datum, limit kusů, skupiny a země a **Uložte**. Produkt lze objednat, dokud je sklad nulový nebo záporný."
+    }
+   ]
+  },
+  {
+   "title": "Možnosti platby",
+   "content": [
+    {
+     "p": "**Plná platba:** vše hned. **Záloha:** procento nebo pevná částka nyní, zbytek později. **Volba zákazníka:** libovolná částka nad minimem."
+    }
+   ]
+  },
+  {
+   "title": "Co vidí zákazník",
+   "content": [
+    {
+     "p": "Stránka produktu ukazuje tlačítko, odpočet a částku k úhradě. Předobjednávky a běžné produkty se objednávají zvlášť."
+    }
+   ]
+  },
+  {
+   "title": "Po naskladnění",
+   "content": [
+    {
+     "p": "Po naskladnění dostanou zákazníci e-mail; ti s doplatkem i bezpečný platební odkaz. Objednávka doplatku má dopravu zdarma a znovu nesnižuje sklad. **Upozornit zákazníky** odešle e-maily ručně."
+    }
+   ]
+  },
+  {
+   "title": "Dobré vědět",
+   "content": [
+    {
+     "p": "Pravidla platí pro všechny kombinace. Záloha je částka objednávky, takže každá platba má vlastní fakturu. Tabulka **Poptávka po produktech** ukazuje zákazníky, kusy a hodnotu."
+    }
+   ]
+  },
+  {
+   "title": "Podpora",
+   "content": [
+    {
+     "p": "E-mail: iamshoaibktk@gmail.com · WhatsApp: +923459016286 · https://www.fiverr.com/shoaibktk"
+    }
+   ]
+  }
+ ]
+}

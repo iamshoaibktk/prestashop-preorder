@@ -1,0 +1,70 @@
+{
+ "title": "Pre-Order",
+ "subtitle": "Handleiding",
+ "labels": {
+  "version": "Versie",
+  "author": "Auteur",
+  "contact": "Contact",
+  "page": "Pagina",
+  "contents": "Inhoud",
+  "compat": "Compatibiliteit"
+ },
+ "sections": [
+  {
+   "title": "Overzicht",
+   "content": [
+    {
+     "p": "Verkoop uitverkochte of nog niet verschenen producten met de normale checkout en elke betaalmodule."
+    }
+   ]
+  },
+  {
+   "title": "Product instellen",
+   "content": [
+    {
+     "p": "Zoek in **Pre-order** een product, kies betaling, datum, limiet, groepen en landen en klik op **Opslaan**. Het product is te bestellen zolang de voorraad nul of lager is."
+    }
+   ]
+  },
+  {
+   "title": "Betaalopties",
+   "content": [
+    {
+     "p": "**Volledige betaling:** alles nu. **Aanbetaling:** een percentage of vast bedrag nu, de rest later. **Keuze van de klant:** elk bedrag boven uw minimum."
+    }
+   ]
+  },
+  {
+   "title": "Wat klanten zien",
+   "content": [
+    {
+     "p": "De productpagina toont de knop, de aftelling en het te betalen bedrag. Pre-order- en gewone producten worden apart besteld."
+    }
+   ]
+  },
+  {
+   "title": "Als de voorraad binnenkomt",
+   "content": [
+    {
+     "p": "Bij nieuwe voorraad krijgen klanten een e-mail; wie nog moet betalen krijgt een veilige betaallink. De restbestelling heeft gratis verzending en verlaagt de voorraad niet opnieuw. **Klanten verwittigen** verstuurt de e-mails handmatig."
+    }
+   ]
+  },
+  {
+   "title": "Goed om te weten",
+   "content": [
+    {
+     "p": "Regels gelden voor alle combinaties. De aanbetaling is het orderbedrag, dus elke betaling heeft een eigen factuur. De tabel **Productvraag** toont klanten, aantallen en waarde."
+    }
+   ]
+  },
+  {
+   "title": "Ondersteuning",
+   "content": [
+    {
+     "p": "E-mail: iamshoaibktk@gmail.com · WhatsApp: +923459016286 · https://www.fiverr.com/shoaibktk"
+    }
+   ]
+  }
+ ]
+}

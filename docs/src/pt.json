@@ -1,0 +1,70 @@
+{
+ "title": "Pre-Order",
+ "subtitle": "Guia do utilizador",
+ "labels": {
+  "version": "Versão",
+  "author": "Autor",
+  "contact": "Contacto",
+  "page": "Página",
+  "contents": "Índice",
+  "compat": "Compatibilidade"
+ },
+ "sections": [
+  {
+   "title": "Apresentação",
+   "content": [
+    {
+     "p": "Venda produtos esgotados ou ainda não lançados, com o checkout normal e qualquer módulo de pagamento."
+    }
+   ]
+  },
+  {
+   "title": "Configurar um produto",
+   "content": [
+    {
+     "p": "Em **Pré-encomenda**, procure um produto, escolha pagamento, data, limite, grupos e países e clique em **Guardar**. O produto pode ser encomendado enquanto o stock for zero ou negativo."
+    }
+   ]
+  },
+  {
+   "title": "Opções de pagamento",
+   "content": [
+    {
+     "p": "**Pagamento total:** tudo agora. **Sinal:** percentagem ou valor fixo agora, o resto depois. **À escolha do cliente:** qualquer valor acima do mínimo."
+    }
+   ]
+  },
+  {
+   "title": "O que o cliente vê",
+   "content": [
+    {
+     "p": "A página do produto mostra o botão, a contagem e o valor a pagar. Pré-encomendas e produtos normais são encomendados em separado."
+    }
+   ]
+  },
+  {
+   "title": "Quando o stock chega",
+   "content": [
+    {
+     "p": "Ao adicionar stock, os clientes recebem um email; quem tem saldo recebe uma ligação de pagamento segura. A encomenda do saldo tem envio grátis e não reduz o stock outra vez. **Avisar os clientes** envia os emails manualmente."
+    }
+   ]
+  },
+  {
+   "title": "A saber",
+   "content": [
+    {
+     "p": "As regras aplicam-se a todas as combinações. O sinal é o valor da encomenda, por isso cada pagamento tem a sua fatura. A tabela **Procura de produtos** mostra clientes, unidades e valor."
+    }
+   ]
+  },
+  {
+   "title": "Suporte",
+   "content": [
+    {
+     "p": "Email: iamshoaibktk@gmail.com · WhatsApp: +923459016286 · https://www.fiverr.com/shoaibktk"
+    }
+   ]
+  }
+ ]
+}

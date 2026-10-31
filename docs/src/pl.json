@@ -1,0 +1,70 @@
+{
+ "title": "Pre-Order",
+ "subtitle": "Instrukcja",
+ "labels": {
+  "version": "Wersja",
+  "author": "Autor",
+  "contact": "Kontakt",
+  "page": "Strona",
+  "contents": "Spis treści",
+  "compat": "Zgodność"
+ },
+ "sections": [
+  {
+   "title": "Przegląd",
+   "content": [
+    {
+     "p": "Sprzedawaj produkty niedostępne lub jeszcze niewydane, ze zwykłym zamówieniem i dowolnym modułem płatności."
+    }
+   ]
+  },
+  {
+   "title": "Konfiguracja produktu",
+   "content": [
+    {
+     "p": "W **Przedsprzedaży** wyszukaj produkt, wybierz płatność, datę, limit sztuk, grupy i kraje, a potem **Zapisz**. Produkt można zamawiać, gdy stan wynosi zero lub mniej."
+    }
+   ]
+  },
+  {
+   "title": "Opcje płatności",
+   "content": [
+    {
+     "p": "**Pełna płatność:** wszystko teraz. **Zaliczka:** procent lub stała kwota teraz, reszta później. **Wybór klienta:** dowolna kwota powyżej minimum."
+    }
+   ]
+  },
+  {
+   "title": "Co widzi klient",
+   "content": [
+    {
+     "p": "Strona produktu pokazuje przycisk, odliczanie i kwotę do zapłaty. Przedsprzedaż i zwykłe produkty zamawia się osobno."
+    }
+   ]
+  },
+  {
+   "title": "Gdy towar dotrze",
+   "content": [
+    {
+     "p": "Po dodaniu towaru klienci dostają e-mail; ci z dopłatą dostają bezpieczny link. Zamówienie dopłaty ma darmową wysyłkę i nie zmniejsza stanu ponownie. **Powiadom klientów** wysyła e-maile ręcznie."
+    }
+   ]
+  },
+  {
+   "title": "Warto wiedzieć",
+   "content": [
+    {
+     "p": "Reguły dotyczą wszystkich kombinacji. Zaliczka to kwota zamówienia, więc każda płatność ma własną fakturę. Tabela **Popyt na produkty** pokazuje klientów, sztuki i wartość."
+    }
+   ]
+  },
+  {
+   "title": "Pomoc",
+   "content": [
+    {
+     "p": "E-mail: iamshoaibktk@gmail.com · WhatsApp: +923459016286 · https://www.fiverr.com/shoaibktk"
+    }
+   ]
+  }
+ ]
+}

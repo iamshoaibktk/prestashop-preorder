@@ -1,0 +1,70 @@
+{
+ "title": "Pre-Order",
+ "subtitle": "Guide d'utilisation",
+ "labels": {
+  "version": "Version",
+  "author": "Auteur",
+  "contact": "Contact",
+  "page": "Page",
+  "contents": "Sommaire",
+  "compat": "Compatibilité"
+ },
+ "sections": [
+  {
+   "title": "Présentation",
+   "content": [
+    {
+     "p": "Vendez des produits en rupture ou pas encore sortis, avec le tunnel de commande normal et tout module de paiement."
+    }
+   ]
+  },
+  {
+   "title": "Configurer un produit",
+   "content": [
+    {
+     "p": "Dans **Précommande**, cherchez un produit, choisissez le paiement, la date, la limite d'unités, les groupes et les pays, puis **Enregistrer**. Le produit peut être commandé tant que son stock est nul ou négatif."
+    }
+   ]
+  },
+  {
+   "title": "Options de paiement",
+   "content": [
+    {
+     "p": "**Paiement complet :** tout maintenant. **Acompte :** un pourcentage ou un montant fixe maintenant, le solde plus tard. **Au choix du client :** tout montant au-dessus de votre minimum."
+    }
+   ]
+  },
+  {
+   "title": "Ce que voient les clients",
+   "content": [
+    {
+     "p": "La fiche produit affiche le bouton, le compte à rebours et le montant dû. Les précommandes et les produits normaux se commandent séparément."
+    }
+   ]
+  },
+  {
+   "title": "À l'arrivée du stock",
+   "content": [
+    {
+     "p": "À l'ajout de stock, les clients reçoivent un e-mail ; ceux qui ont un solde reçoivent un lien de paiement sécurisé. La commande de solde a la livraison gratuite et ne réduit pas le stock une seconde fois. **Prévenir les clients** envoie les e-mails manuellement."
+    }
+   ]
+  },
+  {
+   "title": "Bon à savoir",
+   "content": [
+    {
+     "p": "Les règles s'appliquent à toutes les déclinaisons. L'acompte est le montant de la commande : chaque paiement a sa facture. Le tableau **Demande par produit** indique clients, unités et valeur."
+    }
+   ]
+  },
+  {
+   "title": "Assistance",
+   "content": [
+    {
+     "p": "E-mail : iamshoaibktk@gmail.com · WhatsApp : +923459016286 · https://www.fiverr.com/shoaibktk"
+    }
+   ]
+  }
+ ]
+}

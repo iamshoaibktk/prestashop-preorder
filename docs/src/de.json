@@ -1,0 +1,70 @@
+{
+ "title": "Pre-Order",
+ "subtitle": "Benutzerhandbuch",
+ "labels": {
+  "version": "Version",
+  "author": "Autor",
+  "contact": "Kontakt",
+  "page": "Seite",
+  "contents": "Inhalt",
+  "compat": "Kompatibilität"
+ },
+ "sections": [
+  {
+   "title": "Überblick",
+   "content": [
+    {
+     "p": "Verkaufen Sie ausverkaufte oder noch nicht erschienene Produkte mit dem normalen Checkout und jedem Zahlungsmodul."
+    }
+   ]
+  },
+  {
+   "title": "Produkt einrichten",
+   "content": [
+    {
+     "p": "Suchen Sie unter **Vorbestellung** ein Produkt, wählen Sie Zahlung, Datum, Stücklimit, Gruppen und Länder und klicken Sie **Speichern**. Das Produkt ist bestellbar, solange der Bestand null oder darunter ist."
+    }
+   ]
+  },
+  {
+   "title": "Zahlungsoptionen",
+   "content": [
+    {
+     "p": "**Vollzahlung:** alles sofort. **Anzahlung:** Prozentsatz oder Festbetrag jetzt, Rest später. **Kundenwahl:** jeder Betrag über Ihrem Minimum."
+    }
+   ]
+  },
+  {
+   "title": "Was Kunden sehen",
+   "content": [
+    {
+     "p": "Die Produktseite zeigt Button, Countdown und den fälligen Betrag. Vorbestell- und normale Produkte werden getrennt bestellt."
+    }
+   ]
+  },
+  {
+   "title": "Wenn Ware eintrifft",
+   "content": [
+    {
+     "p": "Bei Wareneingang erhalten Kunden eine E-Mail, bei offenem Betrag mit sicherem Zahlungslink. Die Restzahlung ist versandkostenfrei und mindert den Bestand nicht erneut. **Kunden benachrichtigen** sendet die E-Mails manuell."
+    }
+   ]
+  },
+  {
+   "title": "Gut zu wissen",
+   "content": [
+    {
+     "p": "Regeln gelten für alle Kombinationen. Die Anzahlung ist der Bestellbetrag, jede Zahlung hat also eine eigene Rechnung. Die Tabelle **Produktnachfrage** zeigt Kunden, Stück und Wert."
+    }
+   ]
+  },
+  {
+   "title": "Support",
+   "content": [
+    {
+     "p": "E-Mail: iamshoaibktk@gmail.com · WhatsApp: +923459016286 · https://www.fiverr.com/shoaibktk"
+    }
+   ]
+  }
+ ]
+}

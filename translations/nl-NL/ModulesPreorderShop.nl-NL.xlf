@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="preorder" source-language="en-US" target-language="nl-NL" datatype="plaintext">
+    <body>
+      <trans-unit id="a3970639d3c4c6d7e560a13a3cc99e2b">
+        <source>Pre-orders for this product are reserved for selected customers.</source>
+        <target>Pre-orders zijn voorbehouden aan geselecteerde klanten.</target>
+      </trans-unit>
+      <trans-unit id="6b5acd535cc22fcb9cfb490760845ff6">
+        <source>This product cannot be pre-ordered from your country.</source>
+        <target>Dit product kan niet vanuit uw land worden besteld.</target>
+      </trans-unit>
+      <trans-unit id="87a061731a4273d7fcc2b824cd7fb1e2">
+        <source>All available pre-orders for this product are taken.</source>
+        <target>Alle beschikbare pre-orders zijn vergeven.</target>
+      </trans-unit>
+      <trans-unit id="e8a10a102e7d3ea3deebb04ed16534e4">
+        <source>This cart is for your pre-order balance. Please pay it first, then continue shopping.</source>
+        <target>Deze winkelwagen is voor uw restbedrag. Betaal dit eerst.</target>
+      </trans-unit>
+      <trans-unit id="5dc8964c24cc967f2852b5952b2d7846">
+        <source>Pre-order products and regular products must be ordered separately. Please complete or empty your cart first.</source>
+        <target>Pre-order- en gewone producten worden apart besteld. Rond eerst uw winkelwagen af of maak hem leeg.</target>
+      </trans-unit>
+      <trans-unit id="3eccb87929819548f33f76c675eaaf19">
+        <source>Your pre-order has arrived</source>
+        <target>Uw pre-order is binnen</target>
+      </trans-unit>
+      <trans-unit id="8d8a616169e60fd450b7123e08849081">
+        <source>Good news: %product% is back in stock. Please pay the remaining balance to receive your order %reference%.</source>
+        <target>Goed nieuws: %product% is op voorraad. Betaal het restbedrag om bestelling %reference% te ontvangen.</target>
+      </trans-unit>
+      <trans-unit id="950440b3f6a46b5ff12d66d6df2a0a25">
+        <source>Good news: %product% is in stock and your order %reference% is on its way to being shipped.</source>
+        <target>Goed nieuws: %product% is op voorraad en bestelling %reference% wordt binnenkort verzonden.</target>
+      </trans-unit>
+      <trans-unit id="55637c952460cb58dca10b980dac7340">
+        <source>Pay the balance</source>
+        <target>Restbedrag betalen</target>
+      </trans-unit>
+      <trans-unit id="24a9e07242602f111a21452a55a223f3">
+        <source>Pre-order balance</source>
+        <target>Restbedrag pre-order</target>
+      </trans-unit>
+      <trans-unit id="1b49d9c057ac59ec07a0009d2d7b9751">
+        <source>This cart contains a pre-order deposit. You pay the deposit now and the balance when the product arrives; we will email you a payment link.</source>
+        <target>Deze winkelwagen bevat een aanbetaling. Het restbedrag betaalt u bij levering; u krijgt een betaallink per e-mail.</target>
+      </trans-unit>
+      <trans-unit id="dc05eb553a067dea4acea6cb6aa6caa8">
+        <source>This is the remaining balance of your pre-order. Shipping is already paid.</source>
+        <target>Dit is het restbedrag van uw pre-order. Verzending is al betaald.</target>
+      </trans-unit>
+      <trans-unit id="817986fb7952cb1e0778e9897e0a6b44">
+        <source>This payment link is not valid, or the balance is already paid.</source>
+        <target>Deze link is ongeldig of het bedrag is al betaald.</target>
+      </trans-unit>
+      <trans-unit id="55b67479c10ff122c700d04c0835dced">
+        <source>Pre-order now</source>
+        <target>Nu pre-orderen</target>
+      </trans-unit>
+      <trans-unit id="de08ef55feb28ed601c47c2f249b09ac">
+        <source>Pre-order</source>
+        <target>Pre-order</target>
+      </trans-unit>
+      <trans-unit id="93b49cf6c15edbf70c00deac240b8760">
+        <source>Available on %date%</source>
+        <target>Beschikbaar op %date%</target>
+      </trans-unit>
+      <trans-unit id="2530e001571cd06cf7ed5db531b07544">
+        <source>Time left</source>
+        <target>Resterend</target>
+      </trans-unit>
+      <trans-unit id="44fdec47036f482b68b748f9d786801b">
+        <source>days</source>
+        <target>dagen</target>
+      </trans-unit>
+      <trans-unit id="73cdddd7730abfc13a55efb9f5685a3b">
+        <source>hours</source>
+        <target>uur</target>
+      </trans-unit>
+      <trans-unit id="d8bd79cc131920d5de426f914d17405a">
+        <source>min</source>
+        <target>min</target>
+      </trans-unit>
+      <trans-unit id="74459ca3cf85a81df90da95ff6e7a207">
+        <source>sec</source>
+        <target>s</target>
+      </trans-unit>
+      <trans-unit id="cc3ef25f36d77cec2b3fc48293a58d6d">
+        <source>Pay %amount% now. We ship as soon as it arrives.</source>
+        <target>Betaal nu %amount%. We verzenden zodra het binnen is.</target>
+      </trans-unit>
+      <trans-unit id="4468fa54253fab0a3ece2d5dbbdcd160">
+        <source>Pay %amount% now and %later% when it arrives.</source>
+        <target>Betaal nu %amount% en %later% bij levering.</target>
+      </trans-unit>
+      <trans-unit id="4490218ad6886adee883e9e53110cb63">
+        <source>Choose how much to pay now (minimum %amount%, per unit)</source>
+        <target>Kies uw bedrag (minimaal %amount% per stuk)</target>
+      </trans-unit>
+      <trans-unit id="b55a43a777d9e8c355d21bcabaec03e0">
+        <source>The rest is due when it arrives. We will email you a payment link.</source>
+        <target>De rest betaalt u bij levering. U krijgt een betaallink.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

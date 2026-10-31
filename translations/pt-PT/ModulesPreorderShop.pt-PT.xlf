@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="preorder" source-language="en-US" target-language="pt-PT" datatype="plaintext">
+    <body>
+      <trans-unit id="a3970639d3c4c6d7e560a13a3cc99e2b">
+        <source>Pre-orders for this product are reserved for selected customers.</source>
+        <target>As pré-encomendas estão reservadas a clientes selecionados.</target>
+      </trans-unit>
+      <trans-unit id="6b5acd535cc22fcb9cfb490760845ff6">
+        <source>This product cannot be pre-ordered from your country.</source>
+        <target>Este produto não pode ser pré-encomendado do seu país.</target>
+      </trans-unit>
+      <trans-unit id="87a061731a4273d7fcc2b824cd7fb1e2">
+        <source>All available pre-orders for this product are taken.</source>
+        <target>Todas as pré-encomendas disponíveis estão esgotadas.</target>
+      </trans-unit>
+      <trans-unit id="e8a10a102e7d3ea3deebb04ed16534e4">
+        <source>This cart is for your pre-order balance. Please pay it first, then continue shopping.</source>
+        <target>Este carrinho é para o saldo da pré-encomenda. Pague-o primeiro.</target>
+      </trans-unit>
+      <trans-unit id="5dc8964c24cc967f2852b5952b2d7846">
+        <source>Pre-order products and regular products must be ordered separately. Please complete or empty your cart first.</source>
+        <target>Produtos em pré-encomenda e normais são encomendados em separado. Conclua ou esvazie primeiro o carrinho.</target>
+      </trans-unit>
+      <trans-unit id="3eccb87929819548f33f76c675eaaf19">
+        <source>Your pre-order has arrived</source>
+        <target>A sua pré-encomenda chegou</target>
+      </trans-unit>
+      <trans-unit id="8d8a616169e60fd450b7123e08849081">
+        <source>Good news: %product% is back in stock. Please pay the remaining balance to receive your order %reference%.</source>
+        <target>Boas notícias: %product% está em stock. Pague o saldo para receber a encomenda %reference%.</target>
+      </trans-unit>
+      <trans-unit id="950440b3f6a46b5ff12d66d6df2a0a25">
+        <source>Good news: %product% is in stock and your order %reference% is on its way to being shipped.</source>
+        <target>Boas notícias: %product% está em stock e a encomenda %reference% será enviada em breve.</target>
+      </trans-unit>
+      <trans-unit id="55637c952460cb58dca10b980dac7340">
+        <source>Pay the balance</source>
+        <target>Pagar o saldo</target>
+      </trans-unit>
+      <trans-unit id="24a9e07242602f111a21452a55a223f3">
+        <source>Pre-order balance</source>
+        <target>Saldo da pré-encomenda</target>
+      </trans-unit>
+      <trans-unit id="1b49d9c057ac59ec07a0009d2d7b9751">
+        <source>This cart contains a pre-order deposit. You pay the deposit now and the balance when the product arrives; we will email you a payment link.</source>
+        <target>Este carrinho contém um sinal. Paga o sinal agora e o saldo quando o produto chegar; enviaremos uma ligação de pagamento.</target>
+      </trans-unit>
+      <trans-unit id="dc05eb553a067dea4acea6cb6aa6caa8">
+        <source>This is the remaining balance of your pre-order. Shipping is already paid.</source>
+        <target>Este é o saldo da pré-encomenda. O envio já está pago.</target>
+      </trans-unit>
+      <trans-unit id="817986fb7952cb1e0778e9897e0a6b44">
+        <source>This payment link is not valid, or the balance is already paid.</source>
+        <target>Esta ligação não é válida ou o saldo já está pago.</target>
+      </trans-unit>
+      <trans-unit id="55b67479c10ff122c700d04c0835dced">
+        <source>Pre-order now</source>
+        <target>Pré-encomendar</target>
+      </trans-unit>
+      <trans-unit id="de08ef55feb28ed601c47c2f249b09ac">
+        <source>Pre-order</source>
+        <target>Pré-encomenda</target>
+      </trans-unit>
+      <trans-unit id="93b49cf6c15edbf70c00deac240b8760">
+        <source>Available on %date%</source>
+        <target>Disponível a %date%</target>
+      </trans-unit>
+      <trans-unit id="2530e001571cd06cf7ed5db531b07544">
+        <source>Time left</source>
+        <target>Tempo restante</target>
+      </trans-unit>
+      <trans-unit id="44fdec47036f482b68b748f9d786801b">
+        <source>days</source>
+        <target>dias</target>
+      </trans-unit>
+      <trans-unit id="73cdddd7730abfc13a55efb9f5685a3b">
+        <source>hours</source>
+        <target>horas</target>
+      </trans-unit>
+      <trans-unit id="d8bd79cc131920d5de426f914d17405a">
+        <source>min</source>
+        <target>min</target>
+      </trans-unit>
+      <trans-unit id="74459ca3cf85a81df90da95ff6e7a207">
+        <source>sec</source>
+        <target>s</target>
+      </trans-unit>
+      <trans-unit id="cc3ef25f36d77cec2b3fc48293a58d6d">
+        <source>Pay %amount% now. We ship as soon as it arrives.</source>
+        <target>Pague %amount% agora. Enviamos assim que chegar.</target>
+      </trans-unit>
+      <trans-unit id="4468fa54253fab0a3ece2d5dbbdcd160">
+        <source>Pay %amount% now and %later% when it arrives.</source>
+        <target>Pague %amount% agora e %later% quando chegar.</target>
+      </trans-unit>
+      <trans-unit id="4490218ad6886adee883e9e53110cb63">
+        <source>Choose how much to pay now (minimum %amount%, per unit)</source>
+        <target>Escolha quanto pagar agora (mínimo %amount%, por unidade)</target>
+      </trans-unit>
+      <trans-unit id="b55a43a777d9e8c355d21bcabaec03e0">
+        <source>The rest is due when it arrives. We will email you a payment link.</source>
+        <target>O resto é pago à chegada. Enviaremos uma ligação de pagamento.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

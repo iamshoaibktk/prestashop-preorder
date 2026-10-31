@@ -1,0 +1,10 @@
+/* @author iamshoaibktk@gmail.com | AFL-3.0 */
+.po-box { margin: 16px 0; padding: 16px; border: 1px solid #fbd5c4; border-radius: 10px; background: #fff7f3; }
+.po-box p { margin: 6px 0; }
+.po-title { font-weight: 700; color: #c2410c; text-transform: uppercase; font-size: 13px; letter-spacing: .05em; }
+.po-count { display: flex; gap: 8px; margin: 10px 0; }
+.po-count span { flex: 1; max-width: 72px; padding: 8px 4px; text-align: center; background: #fff; border: 1px solid #fbd5c4; border-radius: 8px; font-size: 11px; color: #6b7280; }
+.po-count b { display: block; font-size: 22px; color: #111827; font-variant-numeric: tabular-nums; }
+.po-amount { display: block; margin: 8px 0; font-weight: 600; }
+.po-amount input { max-width: 160px; margin-top: 6px; }
+.po-refused { color: #b91c1c; font-weight: 600; }

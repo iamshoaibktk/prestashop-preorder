@@ -1,0 +1,70 @@
+{
+ "title": "Pre-Order",
+ "subtitle": "User guide",
+ "labels": {
+  "version": "Version",
+  "author": "Author",
+  "contact": "Contact",
+  "page": "Page",
+  "contents": "Contents",
+  "compat": "Compatibility"
+ },
+ "sections": [
+  {
+   "title": "Overview",
+   "content": [
+    {
+     "p": "Sell products that are out of stock or not released yet, with a normal PrestaShop checkout and any payment module."
+    }
+   ]
+  },
+  {
+   "title": "Set up a product",
+   "content": [
+    {
+     "p": "In **Pre-Order**, search for a product, choose the payment, optional date, unit limit, customer groups and countries, then **Save**. The product can now be ordered while its stock is zero or below."
+    }
+   ]
+  },
+  {
+   "title": "Payment options",
+   "content": [
+    {
+     "p": "**Full payment:** the customer pays everything now. **Deposit:** a percentage or fixed amount now, the balance later. **Customer chooses:** any amount above your minimum."
+    }
+   ]
+  },
+  {
+   "title": "What customers see",
+   "content": [
+    {
+     "p": "The product page shows the Pre-order button, a countdown and what is due now. Pre-order and regular products must be ordered separately."
+    }
+   ]
+  },
+  {
+   "title": "When stock arrives",
+   "content": [
+    {
+     "p": "When stock is added, customers are emailed automatically; those with a balance get a secure payment link. The balance order has free shipping and does not reduce stock again. **Notify customers now** sends the emails by hand."
+    }
+   ]
+  },
+  {
+   "title": "Good to know",
+   "content": [
+    {
+     "p": "Rules apply to all combinations of a product. Deposits appear as the order amount, so each payment has its own invoice. The **Product demand** table shows customers, units and value per product."
+    }
+   ]
+  },
+  {
+   "title": "Support",
+   "content": [
+    {
+     "p": "Email: iamshoaibktk@gmail.com · WhatsApp: +923459016286 · https://www.fiverr.com/shoaibktk"
+    }
+   ]
+  }
+ ]
+}

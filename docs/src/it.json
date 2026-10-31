@@ -1,0 +1,70 @@
+{
+ "title": "Pre-Order",
+ "subtitle": "Guida utente",
+ "labels": {
+  "version": "Versione",
+  "author": "Autore",
+  "contact": "Contatto",
+  "page": "Pagina",
+  "contents": "Indice",
+  "compat": "Compatibilità"
+ },
+ "sections": [
+  {
+   "title": "Panoramica",
+   "content": [
+    {
+     "p": "Vendi prodotti esauriti o non ancora usciti, con il checkout normale e qualsiasi modulo di pagamento."
+    }
+   ]
+  },
+  {
+   "title": "Configurare un prodotto",
+   "content": [
+    {
+     "p": "In **Preordine**, cerca un prodotto, scegli pagamento, data, limite di unità, gruppi e paesi, poi **Salva**. Il prodotto è ordinabile finché la giacenza è zero o negativa."
+    }
+   ]
+  },
+  {
+   "title": "Opzioni di pagamento",
+   "content": [
+    {
+     "p": "**Pagamento completo:** tutto subito. **Acconto:** una percentuale o un importo fisso ora, il saldo dopo. **A scelta del cliente:** qualsiasi importo sopra il minimo."
+    }
+   ]
+  },
+  {
+   "title": "Cosa vede il cliente",
+   "content": [
+    {
+     "p": "La pagina prodotto mostra il pulsante, il conto alla rovescia e l'importo dovuto. Preordini e prodotti normali si ordinano separatamente."
+    }
+   ]
+  },
+  {
+   "title": "All'arrivo della merce",
+   "content": [
+    {
+     "p": "Quando aggiungi merce, i clienti ricevono un'email; chi ha un saldo riceve un link di pagamento sicuro. L'ordine del saldo ha spedizione gratuita e non riduce di nuovo la giacenza. **Avvisa i clienti** invia le email a mano."
+    }
+   ]
+  },
+  {
+   "title": "Da sapere",
+   "content": [
+    {
+     "p": "Le regole valgono per tutte le combinazioni. L'acconto è l'importo dell'ordine: ogni pagamento ha la sua fattura. La tabella **Domanda dei prodotti** mostra clienti, unità e valore."
+    }
+   ]
+  },
+  {
+   "title": "Assistenza",
+   "content": [
+    {
+     "p": "Email: iamshoaibktk@gmail.com · WhatsApp: +923459016286 · https://www.fiverr.com/shoaibktk"
+    }
+   ]
+  }
+ ]
+}

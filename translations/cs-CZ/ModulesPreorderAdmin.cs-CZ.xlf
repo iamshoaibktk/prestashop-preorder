@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="preorder" source-language="en-US" target-language="cs-CZ" datatype="plaintext">
+    <body>
+      <trans-unit id="0d0f12476f84942f377ea756d36f70f0">
+        <source>Pre-Order - Sell Out-of-Stock and Upcoming Products</source>
+        <target>Předobjednávka - Prodávejte vyprodané a připravované produkty</target>
+      </trans-unit>
+      <trans-unit id="b01d089b93adb206c71d9bf72245943e">
+        <source>Sell out-of-stock and upcoming products with full payment, a deposit or a customer-chosen amount, a countdown, and automatic emails when stock arrives.</source>
+        <target>Prodávejte vyprodané a připravované produkty s plnou platbou, zálohou nebo volitelnou částkou, odpočtem a automatickými e-maily při naskladnění.</target>
+      </trans-unit>
+      <trans-unit id="bb8956c67b82c7444a80c6b2433dd8b4">
+        <source>Are you sure you want to uninstall this module?</source>
+        <target>Opravdu chcete tento modul odinstalovat?</target>
+      </trans-unit>
+      <trans-unit id="f38f5974cdc23279ffe6d203641a8bdf">
+        <source>Settings updated.</source>
+        <target>Nastavení aktualizováno.</target>
+      </trans-unit>
+      <trans-unit id="f4f70727dc34561dfde1a3c529b6205c">
+        <source>Settings</source>
+        <target>Nastavení</target>
+      </trans-unit>
+      <trans-unit id="2faec1f9f8cc7f8f40d521c4dd574f49">
+        <source>Enable</source>
+        <target>Povolit</target>
+      </trans-unit>
+      <trans-unit id="93cba07454f06a4a960172bbd6e2a435">
+        <source>Yes</source>
+        <target>Ano</target>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b">
+        <source>No</source>
+        <target>Ne</target>
+      </trans-unit>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target>Uložit</target>
+      </trans-unit>
+      <trans-unit id="0b9cba5e32be92459abae9324535e757">
+        <source>Top Rated on Fiverr</source>
+        <target>Top Rated na Fiverru</target>
+      </trans-unit>
+      <trans-unit id="76344130f12a1a5b20c45500ea5bb523">
+        <source>PrestaShop developer</source>
+        <target>Vývojář PrestaShopu</target>
+      </trans-unit>
+      <trans-unit id="7df57fc7789ecb855336f929a3fc35af">
+        <source>Need help with this module, or a custom feature for your store? I reply quickly.</source>
+        <target>Potřebujete pomoc s modulem nebo funkci na míru pro svůj obchod? Odpovídám rychle.</target>
+      </trans-unit>
+      <trans-unit id="808c092a179c6a13566d93bdd950acdf">
+        <source>Hire me on Fiverr</source>
+        <target>Najměte mě na Fiverru</target>
+      </trans-unit>
+      <trans-unit id="8b777ebcc5034ce0fe96dd154bcb370e">
+        <source>WhatsApp</source>
+        <target>WhatsApp</target>
+      </trans-unit>
+      <trans-unit id="ffbf9ff02b1003b31d0306fa7670c352">
+        <source>Store design</source>
+        <target>Design obchodu</target>
+      </trans-unit>
+      <trans-unit id="9e9767281dac49f7dae5a42b57e08e08">
+        <source>Custom module development</source>
+        <target>Vývoj modulů na míru</target>
+      </trans-unit>
+      <trans-unit id="227f56a61b5e696248ed78e91360ae2b">
+        <source>Custom data migration (blogs, reviews, any platform)</source>
+        <target>Migrace dat na míru (blogy, recenze, jakákoli platforma)</target>
+      </trans-unit>
+      <trans-unit id="fbfe78d513908fe2b009a431e7eae128">
+        <source>Upgrades and bug fixes</source>
+        <target>Aktualizace a opravy chyb</target>
+      </trans-unit>
+      <trans-unit id="8782891ce3ac4299705d72be99be6a7f">
+        <source>Rule removed.</source>
+        <target>Pravidlo odstraněno.</target>
+      </trans-unit>
+      <trans-unit id="fe2c075b0cc5b3f068df7856d4443765">
+        <source>Customers notified: %count%</source>
+        <target>Upozornění zákazníci: %count%</target>
+      </trans-unit>
+      <trans-unit id="dc825ba6985df471969a4a48eaf06593">
+        <source>Choose a product.</source>
+        <target>Vyberte produkt.</target>
+      </trans-unit>
+      <trans-unit id="91d7dbb474aaddc34b4f49f2a84c313b">
+        <source>Enter a deposit above zero (at most 100 for a percentage).</source>
+        <target>Zadejte zálohu větší než nula (u procent nejvýše 100).</target>
+      </trans-unit>
+      <trans-unit id="5575774dfbf681386976c152f369d5a3">
+        <source>Waiting for stock</source>
+        <target>Čeká na naskladnění</target>
+      </trans-unit>
+      <trans-unit id="81826f8d02a493624259f176c9ab1f98">
+        <source>Paid, waiting for stock</source>
+        <target>Zaplaceno, čeká na naskladnění</target>
+      </trans-unit>
+      <trans-unit id="5589ef22f51e211b18ed8120491b4e82">
+        <source>Balance requested</source>
+        <target>Doplatek vyžádán</target>
+      </trans-unit>
+      <trans-unit id="854a6a9bad9a032c93a822b811bd01d3">
+        <source>Paid, stock arrived</source>
+        <target>Zaplaceno, naskladněno</target>
+      </trans-unit>
+      <trans-unit id="6369904bf6a3ad7ec4847a87552a6172">
+        <source>Balance paid</source>
+        <target>Doplatek zaplacen</target>
+      </trans-unit>
+      <trans-unit id="de08ef55feb28ed601c47c2f249b09ac">
+        <source>Pre-order</source>
+        <target>Předobjednávka</target>
+      </trans-unit>
+      <trans-unit id="7e4442ea10321946a7017afefbbd4dc7">
+        <source>Balance due (tax excl.)</source>
+        <target>Doplatek (bez DPH)</target>
+      </trans-unit>
+      <trans-unit id="9190148a024aaf825a24b1f00ba6ec28">
+        <source>Add or update a pre-order product</source>
+        <target>Přidat nebo upravit produkt k předobjednávce</target>
+      </trans-unit>
+      <trans-unit id="2cd6199ee67f0eadee9d5dd14fc30f75">
+        <source>User guide (PDF)</source>
+        <target>Příručka (PDF)</target>
+      </trans-unit>
+      <trans-unit id="deb10517653c255364175796ace3553f">
+        <source>Product</source>
+        <target>Produkt</target>
+      </trans-unit>
+      <trans-unit id="dfd78d86b8f3b758a8aad978d3642699">
+        <source>Type a product name</source>
+        <target>Zadejte název produktu</target>
+      </trans-unit>
+      <trans-unit id="c453a4b8e8d98e82f35b67f433e3b4da">
+        <source>Payment</source>
+        <target>Platba</target>
+      </trans-unit>
+      <trans-unit id="2526cbf86c8032404cef597c7388cea3">
+        <source>Full payment</source>
+        <target>Plná platba</target>
+      </trans-unit>
+      <trans-unit id="92f80bd57592af65188ca27786514cca">
+        <source>Deposit</source>
+        <target>Záloha</target>
+      </trans-unit>
+      <trans-unit id="6a323b7a2b896ae50e86e5adb704ad76">
+        <source>Customer chooses the amount, above a minimum</source>
+        <target>Zákazník volí částku nad minimem</target>
+      </trans-unit>
+      <trans-unit id="f5df1a79064ef4606b7b6758443e329b">
+        <source>Deposit or minimum</source>
+        <target>Záloha nebo minimum</target>
+      </trans-unit>
+      <trans-unit id="066111780930fe215402da8dca11441d">
+        <source>Fixed amount, tax included</source>
+        <target>Pevná částka, s DPH</target>
+      </trans-unit>
+      <trans-unit id="0c614e951a7f8d396870c7db62bbd8a6">
+        <source>Available from (countdown, optional)</source>
+        <target>Dostupné od (odpočet, volitelné)</target>
+      </trans-unit>
+      <trans-unit id="6d72c85bc54f8246cf3cccafcd8ce228">
+        <source>Maximum units to pre-order (0 = no limit)</source>
+        <target>Maximum kusů (0 = bez omezení)</target>
+      </trans-unit>
+      <trans-unit id="a0d93ca1342ce45546810f0cfc14f0bd">
+        <source>Only these customer groups (none selected = everyone)</source>
+        <target>Jen tyto skupiny zákazníků (žádná = všichni)</target>
+      </trans-unit>
+      <trans-unit id="d8ca5797ba299fcf747f6963393cd6cf">
+        <source>Only these countries (none selected = everywhere)</source>
+        <target>Jen tyto země (žádná = všude)</target>
+      </trans-unit>
+      <trans-unit id="b855b2f16becc0f07b6e6f38525c8532">
+        <source>Pre-order products</source>
+        <target>Produkty k předobjednávce</target>
+      </trans-unit>
+      <trans-unit id="27ce7f8b5623b2e2df568d64cf051607">
+        <source>Stock</source>
+        <target>Sklad</target>
+      </trans-unit>
+      <trans-unit id="942d4e37dd5607ab68e54755540d4a47">
+        <source>Reserved</source>
+        <target>Rezervováno</target>
+      </trans-unit>
+      <trans-unit id="1432596d084873bee8df589b0b01448c">
+        <source>Available from</source>
+        <target>Dostupné od</target>
+      </trans-unit>
+      <trans-unit id="6805e27cb322116de055f03fa50989da">
+        <source>Notify customers now</source>
+        <target>Upozornit zákazníky</target>
+      </trans-unit>
+      <trans-unit id="1063e38cb53d94d386f21227fcd84717">
+        <source>Remove</source>
+        <target>Odstranit</target>
+      </trans-unit>
+      <trans-unit id="e79029682de00de112f1a3d2e8a0e091">
+        <source>No pre-order products yet.</source>
+        <target>Zatím žádné produkty.</target>
+      </trans-unit>
+      <trans-unit id="b0781832285753be26dc8d1200475fdf">
+        <source>Product demand</source>
+        <target>Poptávka po produktech</target>
+      </trans-unit>
+      <trans-unit id="e6d0e1c8fc6a4fcf47869df87e04cd88">
+        <source>Customers</source>
+        <target>Zákazníci</target>
+      </trans-unit>
+      <trans-unit id="e5771a362d88a71a657bfcd21ca54b3f">
+        <source>Units</source>
+        <target>Kusy</target>
+      </trans-unit>
+      <trans-unit id="c39b9887d30ecf479cf26ff31dfc22f7">
+        <source>Value (tax excl.)</source>
+        <target>Hodnota (bez DPH)</target>
+      </trans-unit>
+      <trans-unit id="5e05906d9f418546b4ec254603b86428">
+        <source>Collected (tax excl.)</source>
+        <target>Vybráno (bez DPH)</target>
+      </trans-unit>
+      <trans-unit id="a704d920ee4b6f85bc976fb424f9d673">
+        <source>Pre-orders</source>
+        <target>Předobjednávky</target>
+      </trans-unit>
+      <trans-unit id="a240fa27925a635b08dc28c9e4f9216d">
+        <source>Order</source>
+        <target>Objednávka</target>
+      </trans-unit>
+      <trans-unit id="ec53a8c4f07baed5d8825072c89799be">
+        <source>Status</source>
+        <target>Stav</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

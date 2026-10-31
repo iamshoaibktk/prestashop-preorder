@@ -1,0 +1,70 @@
+{
+ "title": "Pre-Order",
+ "subtitle": "Guía de usuario",
+ "labels": {
+  "version": "Versión",
+  "author": "Autor",
+  "contact": "Contacto",
+  "page": "Página",
+  "contents": "Contenido",
+  "compat": "Compatibilidad"
+ },
+ "sections": [
+  {
+   "title": "Introducción",
+   "content": [
+    {
+     "p": "Venda productos agotados o aún no lanzados, con el proceso de compra normal y cualquier módulo de pago."
+    }
+   ]
+  },
+  {
+   "title": "Configurar un producto",
+   "content": [
+    {
+     "p": "En **Reserva**, busque un producto, elija el pago, la fecha, el límite de unidades, los grupos y países y pulse **Guardar**. El producto se puede pedir mientras su stock sea cero o negativo."
+    }
+   ]
+  },
+  {
+   "title": "Opciones de pago",
+   "content": [
+    {
+     "p": "**Pago completo:** todo ahora. **Depósito:** un porcentaje o importe fijo ahora, el saldo después. **A elección del cliente:** cualquier importe sobre su mínimo."
+    }
+   ]
+  },
+  {
+   "title": "Qué ve el cliente",
+   "content": [
+    {
+     "p": "La página del producto muestra el botón, la cuenta atrás y lo que se paga ahora. Las reservas y los productos normales se piden por separado."
+    }
+   ]
+  },
+  {
+   "title": "Cuando llega el stock",
+   "content": [
+    {
+     "p": "Al añadir stock, los clientes reciben un correo; quienes tienen saldo reciben un enlace de pago seguro. El pedido del saldo tiene envío gratis y no vuelve a reducir el stock. **Avisar a los clientes** envía los correos a mano."
+    }
+   ]
+  },
+  {
+   "title": "A tener en cuenta",
+   "content": [
+    {
+     "p": "Las reglas se aplican a todas las combinaciones. El depósito es el importe del pedido, así que cada pago tiene su factura. La tabla **Demanda de productos** muestra clientes, unidades y valor."
+    }
+   ]
+  },
+  {
+   "title": "Soporte",
+   "content": [
+    {
+     "p": "Correo: iamshoaibktk@gmail.com · WhatsApp: +923459016286 · https://www.fiverr.com/shoaibktk"
+    }
+   ]
+  }
+ ]
+}
